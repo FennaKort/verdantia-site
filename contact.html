@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    <header id="titleBanner">
-        <div id="siteName"><h2>Verdantia</h2></div>    
-        <div id="headerButtons">
-            <a href="index.html" class="bannerButton" id="homeB">Home</a>
-            <a href="services.html" class="bannerButton" id="servicesB">Services</a>
-            <a href="contact.html" class="bannerButton" id="contactB">Contact</a>
-        </div>
-    </header>
-    <div class="contact-container">
-        <h1>Contact Us</h1>
-        <form action="mailto:dirwi911@mtroyal.ca" method="POST" enctype="text/plain">
-          <!-- Name -->
-          <label for="name">Your Name</label>
-          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-    
-          <!-- Email -->
-          <label for="email">Your Email</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email" required>
-    
-          <!-- Service Type -->
-          <label for="service">Which Service Are You Interested In?</label>
-          <select id="service" name="service" required>
-            <option value="">Select a service</option>
-            <option value="plant-parties">Plant Parties</option>
-            <option value="pop-up-markets">Pop Up Markets</option>
-            <option value="plant-styling">Plant Styling</option>
-            <option value="general-inquiry">General Inquiry</option>
-          </select>
-    
-          <!-- Party Size (optional for Plant Parties) -->
-          <label for="party-size">Party Size (if applicable)</label>
-          <input type="number" id="party-size" name="party-size" placeholder="Enter number of participants">
-    
-          <!-- Additional Message -->
-          <label for="message">Additional Information</label>
-          <textarea id="message" name="message" rows="5" placeholder="Let us know more about your needs" required></textarea>
-    
-          <!-- Submit Button -->
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-</body>
-</html>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header id="titleBanner">
+    <div id="siteName">
+      <h2>Verdantia</h2>
+    </div>
+    <div id="headerButtons">
+      <a href="index.html" class="bannerButton" id="homeB">Home</a>
+      <a href="services.html" class="bannerButton" id="servicesB">Services</a>
+      <a href="contact.html" class="bannerButton" id="contactB">Contact</a>
+    </div>
+  </header>
+  <div class="contact-container">
+    <h1>Contact Us</h1>
+    <form action="mailto:dirwi911@mtroyal.ca" method="POST" enctype="text/plain">
+      <!-- Name -->
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <!-- Email -->
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <!-- Service Type -->
+      <label for="service">Which Service Are You Interested In?</label>
+      <select id="service" name="service" required>
+        <option value="">Select a service</option>
+        <option value="plant-parties">Plant Parties</option>
+        <option value="pop-up-markets">Pop Up Markets</option>
+        <option value="plant-styling">Plant Styling</option>
+        <option value="general-inquiry">General Inquiry</option>
+      </select>
+
+      <!-- Party Size (optional for Plant Parties) -->
+      <label for="party-size">Party Size (if applicable)</label>
+      <input type="number" id="party-size" name="party-size" placeholder="Enter number of participants">
+
+      <!-- Additional Message -->
+      <label for="message">Additional Information</label>
+      <textarea id="message" name="message" rows="5" placeholder="Let us know more about your needs"
+        required></textarea>
+
+      <!-- Submit Button -->
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</body>
+
+</html>
