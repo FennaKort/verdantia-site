@@ -63,10 +63,10 @@ body {
 
 /*---------------------------------------------INDEX.HTML specific --------------------------------------*/
 #tagline {
-  background-color: var(--white-80);
+  background-color: var(--grey-transparent);
 
-  width: 60%;
-  height: 70%;
+  width: 90%;
+  height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,18 +74,31 @@ body {
   color: var(--pink-full);
   border-radius: 12px;/*rounded corners */
   font-family: 'Inria Serif', serif;
-  font-size: 5rem;
+  font-size: 5em;
   color: var(--grey-transparent);/* Make the inside transparent */
   -webkit-text-stroke: 2px var(--pink-full);/* Outline color and thickness */
   text-align: center;
 
-  top: -5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
   border: 2px solid var(--pink-full);
-  border-radius: 10px;
+  border-radius: 0;
+
   /* Slightly smaller than parent radius */
+}
+#tagline p{
+  margin: 10px;
+}
+#tagOutline{
+
+  background-color: var(--white-80);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  height: 70%;
+  border-radius: 0;
+
+
 }
 
 #homeBG {
@@ -102,7 +115,58 @@ body {
 }
 
 /*---------------------------------------------SERVICES.HTML specific --------------------------------------*/
+.imageSection{
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+}
+.imageSection img{
+  height: 20em;
+  width: 20em;
+  border-radius: 20em;
+}
+.contentSection{
+display: flex;
+width: 60%;
+margin-left: 2em;
+}
+.offers{
+  display: flex;
+  height: 20rem;
+  width: 100%;
+}
 
+#offerContainer{
+  display: flex;
+  height: 20rem;
+  width: 100%;
+}
 
+#priceContainer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60em;
+  background-color: var(--light-pink-full);
+}
+
+.pricingTable{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 80%;
+  background-color: var(--white-full);
+  font-size: 2em;
+}
+.pricingTable th{
+color: #A04D69;
+font-size: 8em;
+}
+.pricingTable td{
+  width: 50%;
+  padding-left: 20%;
+}
 
 /*---------------------------------------------CONTACT.HTML specific --------------------------------------*/
