@@ -5,123 +5,130 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services</title>
+  <meta name="authors" content="Fenna and Damon">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
   <header id="titleBanner">
     <div id="siteName">
+      <!-- Site logo goes here -->
       <h2>Verdantia</h2>
     </div>
-    <div id="headerButtons">
+    <nav id="headerButtons">
       <a href="index.html" class="bannerButton" id="homeB">Home</a>
-      <a href="services.html" class="bannerButton" id="servicesB">Services</a>
+      <a href="services.html" class="bannerButton currentPage" id="servicesB">Services</a>
       <a href="contact.html" class="bannerButton" id="contactB">Contact</a>
-    </div>
+    </nav>
   </header>
 
-  <div id="offerContainer">
-    <div class="imageSection">
-      <img src="images/what-we-do-img.jpeg" alt="Plant Party">
-      <div class="overlay">Plant Party July 2024</div>
-    </div>
-    <div class="contentSection">
-      <h1>What We Offer</h1>
-      <div class="buttons">
-        <button>Plant Parties</button>
-        <button>Pop Up Markets</button>
-        <button>Plant Styling</button>
+  <main>
+    <div id="offerContainer">
+      <div class="imageSection">
+        <img src="images/what-we-do-img.jpeg" alt="Plant Party">
+        <div class="overlay">Plant Party July 2024</div>
+      </div>
+      <div class="contentSection">
+        <h1>What We Offer</h1>
+        <div class="buttons">
+          <button>Plant Parties</button>
+          <button>Pop Up Markets</button>
+          <button>Plant Styling</button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div id="partyContainer" class="offers">
-    <div class="imageSection">
-      <img src="images/plant-parties-img.jpeg" alt="Plant Party">
+    <div id="partyContainer" class="offers">
+      <div class="imageSection">
+        <img src="images/plant-parties-img.jpeg" alt="Plant Party">
 
+      </div>
+      <div class="contentSection">
+        <h3>Plant Parties</h3>
+        <p>
+          Bring the joy of greenery to your gatherings! Whether it's a birthday, bridal shower, or just a fun hangout, our
+          plant parties are perfect for groups of all sizes. Create your own plant arrangements while bonding with friends
+          and learning plant care tips. Let's grow together!
+        </p>
+
+      </div>
     </div>
-    <div class="contentSection">
-      <h3>Plant Parties</h3>
-      <p>
-        Bring the joy of greenery to your gatherings! Whether it's a birthday, bridal shower, or just a fun hangout, our
-        plant parties are perfect for groups of all sizes. Create your own plant arrangements while bonding with friends
-        and learning plant care tips. Let's grow together!
-      </p>
 
+    <div id="marketContainer" class="offers">
+      <div class="imageSection">
+        <img src="images/popup-markets-img.jpeg" alt="Plant Party">
+
+      </div>
+      <div class="contentSection">
+        <h3>Pop Up Markets</h3>
+        <p>
+          Catch us at local markets and events! We bring a curated selection of vibrant, healthy plants and unique
+          accessories to your community. It's the perfect opportunity to discover your next favorite green companion
+          locally.
+        </p>
+      </div>
     </div>
-  </div>
 
-  <div id="marketContainer" class="offers">
-    <div class="imageSection">
-      <img src="images/popup-markets-img.jpeg" alt="Plant Party">
-
+    <div id="stylingContainer" class="offers">
+      <div class="imageSection">
+        <img src="images/plant-styling-img.jpeg" alt="Plant Party">
+      </div>
+      <div class="contentSection">
+        <h3>Plant Styling</h3>
+        <p>
+          Transform your space with greenery! Our plant styling services are tailored to your home or business, creating
+          beautiful, functional, and low-maintenance plant displays. Not sure how to care for your plants? Check out <a
+            href="https://www.howmanyplants.com" target="_blank">this helpful plant care guide</a> to get started. From
+          statement pieces to subtle touches, we'll help you bring your vision to life.
+        </p>
+      </div>
     </div>
-    <div class="contentSection">
-      <h3>Pop Up Markets</h3>
-      <p>
-        Catch us at local markets and events! We bring a curated selection of vibrant, healthy plants and unique
-        accessories to your community. It's the perfect opportunity to discover your next favorite green companion
-        locally.
-      </p>
-    </div>
-  </div>
 
-  <div id="stylingContainer" class="offers">
-    <div class="imageSection">
-      <img src="images/plant-styling-img.jpeg" alt="Plant Party">
+    <div id="priceContainer">
+      <table class="pricingTable">
+        <thead>
+          <tr>
+            <th colspan="2">Price List</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Plant Parties</td>
+            <td>
+              4-10 people: $80 + plants <br>
+              10+ people: Please contact
+            </td>
+          </tr>
+          <tr>
+            <td>Pop Up Markets</td>
+            <td>$45/hour, minimum 2 hours</td>
+          </tr>
+          <tr>
+            <td>Plant Styling</td>
+            <td>Please contact for quote</td>
+          </tr>
+          <tr>
+            <td>Plants</td>
+            <td>
+              4"-10" available. <br>
+              Recommend 1 large plant or 2-3 small plants per participant
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div class="contentSection">
-      <h3>Plant Styling</h3>
-      <p>
-        Transform your space with greenery! Our plant styling services are tailored to your home or business, creating
-        beautiful, functional, and low-maintenance plant displays. Not sure how to care for your plants? Check out <a
-          href="https://www.howmanyplants.com" target="_blank">this helpful plant care guide</a> to get started. From
-        statement pieces to subtle touches, we'll help you bring your vision to life.
-      </p>
+
+    <div id="contactContainer">
+      <a href="contact.html">
+        <button id="contactFooterBtn">
+          Ready to make today beautiful? Contact Us
+        </button>
+      </a>
     </div>
-  </div>
-
-  <div id="priceContainer">
-    <table class="pricingTable">
-      <thead>
-        <tr>
-          <th colspan="2">Price List</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Plant Parties</td>
-          <td>
-            4-10 people: $80 + plants <br>
-            10+ people: Please contact
-          </td>
-        </tr>
-        <tr>
-          <td>Pop Up Markets</td>
-          <td>$45/hour, minimum 2 hours</td>
-        </tr>
-        <tr>
-          <td>Plant Styling</td>
-          <td>Please contact for quote</td>
-        </tr>
-        <tr>
-          <td>Plants</td>
-          <td>
-            4"-10" available. <br>
-            Recommend 1 large plant or 2-3 small plants per participant
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div id="contactContainer">
-    <a href="contact.html">
-      <button id="contactFooterBtn">
-        Ready to make today beautiful? Contact Us
-      </button>
-    </a>
-  </div>
+  </main>
+  <footer>
+    
+  </footer>
 </body>
 
 </html>
