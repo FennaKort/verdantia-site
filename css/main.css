@@ -4,7 +4,7 @@
 
 :root {
   /* 100% Opacity Colors */
-  --white-full: #FFFCFC;
+  --off-white-full: #FFFCFC;
   --black-full: #000000;
   --pink-full: #CC6D8A;
   --dark-pink-full: #A04D69;
@@ -16,7 +16,7 @@
   --very-light-pink-full: #FAEAEA;
 
   /* 80% Opacity Colors */
-  --white-80: rgba(255, 252, 252, 0.8);
+  --off-white-80: rgba(255, 252, 252, 0.8);
 }
 
 /*----------------------------------------all pages---------------------------------------------*/
@@ -24,7 +24,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /*all general text in Inria Sans*/
+  /*all general text in Inria Sans, base font size 20px*/
   font-family: "Inria Sans", sans-serif;
   font-size: 20px;
 }
@@ -52,7 +52,7 @@ h3 {
   align-items: center;
   background-color: var(--green-full);
   padding: 0px 0px;
-  color: white;
+  color: var(--off-white-full);
   height: 2rem;
 }
 
@@ -68,7 +68,7 @@ h3 {
 
 .bannerButton {
   text-decoration: none;
-  color: white;
+  color: var(--off-white-full);
   padding: 0 25px;
   background-color: var(--green-full);
   border-radius: 0;
@@ -107,14 +107,14 @@ h3 {
 }
 
 #tagContainer{
-  background-color: var(--white-80);
+  background-color: var(--off-white-80);
   width: 70%;
   height: 70%;
   padding: 1.25rem;
 }
 
 #homeBG {
-  background: url('../images/calladiums-1-bg.jpeg') no-repeat center center;
+  background: url('../images/calladiums-1-bg.jpg') no-repeat center center;
   background-size: cover;
   height: calc(100vh - 3em);
   /* Full screen( minus the header height */
@@ -127,34 +127,53 @@ h3 {
 }
 
 /*---------------------------------------------SERVICES.HTML specific --------------------------------------*/
+
 .imageSection{
   display: flex;
   width: 40%;
   justify-content: center;
   align-items: center;
 }
+
 .imageSection img{
-  height: 20em;
-  width: 20em;
-  border-radius: 20em;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
 }
+/*
 .contentSection{
 display: flex;
 width: 60%;
 margin-left: 2em;
 }
+
 .offers{
   display: flex;
   height: 20rem;
   width: 100%;
 }
+*/
 
+/*What We Offer section*/
 #offerContainer{
-  display: flex;
-  height: 20rem;
+  background-color: var(--light-pink-full);
+  height: 70vh; /*calculated from 760px for container from design made for 1920x1080 screen*/
   width: 100%;
+  padding: 7vh 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/*
+#offerImage {
+  height: 50vh; /*this gets it right on landscape size but not on portrait size
+  width: auto;
+}
+*/
+
+
+/*prices table section*/
 #priceContainer{
   width: 100%;
   display: flex;
