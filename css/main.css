@@ -32,7 +32,9 @@
 /*all headings in inria serif*/
 h1 {
   font-family: 'Inria Serif', serif;
-  font-size: 4rem;
+  font-weight: 700;
+  font-size: 4.5rem;
+  font-size: 12vmin;
   color: var(--grey-transparent);/* Make the inside transparent */
   -webkit-text-stroke: 0.1rem var(--dark-pink-full);/* Outline color and thickness */
 }
@@ -51,7 +53,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
   background-color: var(--green-full);
-  padding: 0px 0px;
+  padding: 0 1rem;
   color: var(--off-white-full);
   height: 2rem;
 }
@@ -90,17 +92,25 @@ h3 {
 
 
 /*---------------------------------------------INDEX.HTML specific --------------------------------------*/
+#homeBG {
+  background: url('../images/calladiums-1-bg.jpg') no-repeat center center;
+  background-size: cover;
+  height: calc(100vh - 2rem);
+  /* Full screen( minus the header height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #tagline {
   text-align: center;
-  width: 100%;
-  height: 100%;
   /*still needing a solution to make this font scalable with browser size change*/
 }
 
 #tagOutline {
   width: 100%;
   height: 100%;
-  border: 3px solid var(--pink-full);
+  border: 0.2rem solid var(--pink-full);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,67 +120,76 @@ h3 {
   background-color: var(--off-white-80);
   width: 70%;
   height: 70%;
-  padding: 1.25rem;
-}
-
-#homeBG {
-  background: url('../images/calladiums-1-bg.jpg') no-repeat center center;
-  background-size: cover;
-  height: calc(100vh - 3em);
-  /* Full screen( minus the header height */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  padding: 0px;
-
+  padding: 1.5rem;
 }
 
 /*---------------------------------------------SERVICES.HTML specific --------------------------------------*/
-
-.imageSection{
+.offers {
+  width: 100%;
   display: flex;
-  width: 40%;
   justify-content: center;
-  align-items: center;
+  /*align-items: center;*/
+  padding: 4rem 0;
 }
 
 .imageSection img{
-  max-width: 100%;
-  height: auto;
   border-radius: 50%;
+  max-width: 20vw;
+  height: auto;
 }
-/*
-.contentSection{
-display: flex;
-width: 60%;
-margin-left: 2em;
-}
-
-.offers{
-  display: flex;
-  height: 20rem;
-  width: 100%;
-}
-*/
 
 /*What We Offer section*/
 #offerContainer{
   background-color: var(--light-pink-full);
-  height: 70vh; /*calculated from 760px for container from design made for 1920x1080 screen*/
-  width: 100%;
-  padding: 7vh 2vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-/*
-#offerImage {
-  height: 50vh; /*this gets it right on landscape size but not on portrait size
-  width: auto;
+#offerFigure {
+  position:relative;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  margin-left: auto;
 }
-*/
+
+#offerImage {
+  max-width: 30vw;
+  height: auto;
+}
+
+#offerCaption {
+  position: absolute;
+  bottom: -1rem;
+  left: 1rem;
+  border: #416A53 0.3rem solid;
+  background-color: #FFFCFC;
+  color: #11451F;
+  font-family: 'Inria Serif', 'Times New Roman', Times, serif;
+  padding: 0.5rem 1.5rem;
+}
+
+#offerContentSection {
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#offerContentSection .buttonsContainer {
+  /*properties as flex item of #offerContentSection*/
+  flex-grow: 1;
+  padding: 0 1rem;
+  
+  /*properties as flex container of individual buttons*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+
+/*Offers Details section*/
+.contentSection{
+  width: 30%;
+  margin-left: 2em;
+  }
 
 
 /*prices table section*/
