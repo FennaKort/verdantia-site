@@ -129,7 +129,7 @@ h3 {
   display: flex;
   justify-content: center;
   /*align-items: center;*/
-  padding: 4rem 0;
+  /*padding: 4rem 0;*/
 }
 
 .imageSection img{
@@ -140,14 +140,18 @@ h3 {
 
 /*What We Offer section*/
 #offerContainer{
+  padding-top: 4rem;
   background-color: var(--light-pink-full);
 }
 
 #offerFigure {
-  position:relative;
   padding-left: 1rem;
   padding-right: 2rem;
   margin-left: auto;
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  justify-content:first baseline;
 }
 
 #offerImage {
@@ -157,8 +161,8 @@ h3 {
 
 #offerCaption {
   position: absolute;
-  bottom: -1rem;
-  left: 1rem;
+  bottom: 2.5rem;
+  left: 0.5rem;
   border: #416A53 0.3rem solid;
   background-color: #FFFCFC;
   color: #11451F;
@@ -167,6 +171,7 @@ h3 {
 }
 
 #offerContentSection {
+  padding-top: 1rem;
   margin-right: auto;
   display: flex;
   flex-direction: column;
@@ -183,6 +188,16 @@ h3 {
   justify-content: space-evenly;
 }
 
+#offerContentSection .buttons {
+  text-decoration: none;
+  background-color: #FFFCFC;
+  font-family: 'Inria Serif', 'Times New Roman', Times, serif;
+  color: #A04D69;
+  font-size: 1.5rem;
+  border: #CC6D8A 0.1rem solid;
+  margin: 1rem;
+  padding: 1rem;
+}
 
 
 /*Offers Details section*/
@@ -190,6 +205,12 @@ h3 {
   width: 30%;
   margin-left: 2em;
   }
+
+#partyContainer {
+  background-color: #FFFCFC;
+}
+
+
 
 
 /*prices table section*/
