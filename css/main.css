@@ -241,3 +241,86 @@ font-size: 8em;
 }
 
 /*---------------------------------------------CONTACT.HTML specific --------------------------------------*/
+
+/*---------------------------------------------CONTACT.HTML specific --------------------------------------*/
+.contact-container {
+  background-color: var(--off-white-80);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  border: 0.2rem solid var(--dark-pink-full);
+  border-radius: 0.5rem;
+}
+
+.contact-container h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--pink-full);
+  font-family: 'Inria Serif', serif;
+  font-size: 3rem;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-container label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--dark-pink-full);
+}
+
+.contact-container input[type="text"],
+.contact-container input[type="email"],
+.contact-container input[type="number"],
+.contact-container textarea,
+.contact-container select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 0.1rem solid var(--dark-pink-full);
+  border-radius: 0.3rem;
+  background-color: var(--off-white-full);
+  font-size: 1rem;
+}
+
+.contact-container textarea {
+  resize: vertical;
+}
+
+.contact-container fieldset {
+  border: 0.1rem solid var(--pink-full);
+  border-radius: 0.3rem;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.contact-container fieldset legend {
+  font-family: 'Inria Serif', serif;
+  font-size: 1.5rem;
+  color: var(--pink-full);
+  padding: 0 0.5rem;
+}
+
+.contact-container button[type="submit"] {
+  background-color: var(--green-full);
+  color: var(--off-white-full);
+  border: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 0.3rem;
+  align-self: center;
+  width: 50%;
+}
+
+.contact-container button[type="submit"]:hover {
+  background-color: var(--light-green-full);
+}
+
+.contact-container input[type="checkbox"],
+.contact-container input[type="radio"] {
+  margin-right: 0.5rem;
+}
