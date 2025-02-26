@@ -43,5 +43,7 @@ HTML changes:
 - adjusted fieldsets and item order for form
 [x] needs regex for phone and email
 [x] needs reset button for form
+[] needs subject textarea for form
 [] would be nice to improve styling of radio buttons+labels
 [] would be nice to swap services select for checkboxes
+[] why won't the top and bottom padding for label.formField push out more space between the items?
