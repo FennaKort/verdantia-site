@@ -69,14 +69,19 @@ footer p::first-letter {
   height: 2rem;
 }
 
-#titleBanner h2 {
-  padding: 0px 20px;
+#headerButtons, #siteName {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+#siteName h2 {
+  padding: 0px 10px;
   font-size: 1.5rem;
 }
 
-#headerButtons {
-  display: flex;
-  height: 100%;
+#siteName img {
+  height: 70%;
 }
 
 .bannerButton {
@@ -229,6 +234,8 @@ footer p::first-letter {
   background-color: #FFFCFC;
 }
 
+
+
 hr {
   width:80%;
   height:0.2rem;
@@ -276,7 +283,12 @@ color: #A04D69;
 tr:nth-child(even) {
   background-color: var(--very-light-pink-full);
 }
-/*table needs striped table formatting and need to figure out the proper width to coordinate with the rest of the site*/
+
+#contactContainer {
+  height: 80vh;
+  background-image: url(../images/calladiums-2-bg.jpg);
+  background-size: cover;
+}
 
 /*---------------------------------------------CONTACT.HTML specific --------------------------------------*/
 .contact-container {

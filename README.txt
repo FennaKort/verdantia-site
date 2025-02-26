@@ -53,7 +53,7 @@ your paragraphs differently. - added to footer
 
 Remaining:
 MUST:
-[] site needs logo
+[x] site needs logo
 [] float an image to the right side of a paragraph of your choice in your website. 
 
 NICE TO HAVE:
