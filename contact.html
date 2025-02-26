@@ -26,12 +26,55 @@
       <h1>Contact Us</h1>
       <form action="mailto:dirwi911@mtroyal.ca" method="POST" enctype="text/plain">
         <!-- Name -->
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-  
-        <!-- Email -->
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <fieldset>
+          <legend>Your Name</legend>
+          <!--Salutation-->
+            <label for="salutation">Salutation</label>
+            <select id="salutation" name="salutation" required>
+              <option value=""></option>
+              <option value="Mrs.">Mrs.</option>
+              <option value="Mr.">Mr.</option>
+              <option value="Ms.">Ms.</option>
+              <option value="Mx.">Mx.</option>
+              <option value="Dr.">Dr.</option>
+            </select>
+          <!--First Name-->
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required autofocus>
+          <!--Last Name-->
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+        </fieldset>
+
+        <!--Contact Information-->
+        <fieldset>
+          <legend>How can we get in touch?</legend>
+          <!-- Phone -->
+            <label for="phone">Your Phone</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}" placeholder="123-456-7890" required>
+
+          <!-- Email -->
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="example@example.com" required>          
+        </fieldset>
+
+          <!-- Preferred Contact Method (Radio Buttons) -->
+          <fieldset>
+            <legend>Preferred Contact Method</legend>
+            <label>
+              <input type="radio" name="contact-method" value="email" checked>
+              Email
+            </label>
+            <label>
+              <input type="radio" name="contact-method" value="phone">
+              Phone
+            </label>
+            <label>
+              <input type="radio" name="contact-method" value="text">
+              Text Message
+            </label>
+          </fieldset>
+
   
         <!-- Service Type -->
         <label for="service">Which Service Are You Interested In?</label>
@@ -47,22 +90,7 @@
         <label for="party-size">Party Size (if applicable)</label>
         <input type="number" id="party-size" name="party-size" placeholder="Enter number of participants">
   
-        <!-- Preferred Contact Method (Radio Buttons) -->
-        <fieldset>
-          <legend>Preferred Contact Method</legend>
-          <label>
-            <input type="radio" name="contact-method" value="email" checked>
-            Email
-          </label>
-          <label>
-            <input type="radio" name="contact-method" value="phone">
-            Phone
-          </label>
-          <label>
-            <input type="radio" name="contact-method" value="text">
-            Text Message
-          </label>
-        </fieldset>
+
   
         <!-- Areas of Interest (Checkbox Items) -->
         <fieldset>
@@ -93,13 +121,15 @@
   
         <!-- Submit Button -->
         <button type="submit">Send Message</button>
+
+        <!-- Reset Button -->
+        <button type="reset">Reset the Form</button>        
       </form>
     </div>
   </main>
-  
 
   <footer>
-
+    <p>Verdantia is a demo site created by Fenna and Damon.</p>
   </footer>
 </body>
 

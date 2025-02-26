@@ -32,6 +32,16 @@ HTML changes:
 [] footer tags need content
 - changed id structure for tagline container on homepage
 
-20 Feb 25. Fenna
+20 Feb 25. 
+- Fenna working on CSS
 - resized all images according to design specs
 - replaced outer divs on services page with section elements for improved semantic html
+
+22 Feb 25. Damon worked on form, button links, and form css.
+
+25 Feb 25. Fenna
+- adjusted fieldsets and item order for form
+[x] needs regex for phone and email
+[x] needs reset button for form
+[] would be nice to improve styling of radio buttons+labels
+[] would be nice to swap services select for checkboxes
