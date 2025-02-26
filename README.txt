@@ -23,13 +23,12 @@ conformity to project reqs - distribute 50/50 so we've got equal eyes making sur
 
 13 Feb 25
 - Fenna working on CSS; primarily adjusting display for homepage and reorganizing font heirarchy structure
-[] site needs logo
 [x] site needs a figure and figcaption - added 20 feb to services page
 
 HTML changes:
 - replaced div with nav for menu buttons
 - added main and footer tags
-[] footer tags need content
+[x] footer tags need content
 - changed id structure for tagline container on homepage
 
 20 Feb 25. 
@@ -44,11 +43,21 @@ HTML changes:
 [x] needs regex for phone and email
 [x] needs reset button for form
 [x] needs subject textarea for form - replaced with checkboxes to indicate type of inquiry
-[] would be nice to improve styling of radio buttons+labels
-[] would be nice to swap services select for checkboxes
+[x] would be nice to improve styling of radio buttons+labels
+[x] would be nice to swap services select for checkboxes
 [x] why won't the top and bottom padding for label.formField push out more space between the items? - because <label> doesn't have height+width that can be set. I added a margin-bottom value to the input fields instead
 - validated all three html pages and corrected errors
-[] need to fix table styling
-[] table needs alternating colours
+[x] table needs alternating colours
 [x] Use the first-letter pseudo element selector to style a first letter of (at least) one of 
-your paragraphs dieerently. - added to footer
+your paragraphs differently. - added to footer
+
+Remaining:
+MUST:
+[] site needs logo
+[] float an image to the right side of a paragraph of your choice in your website. 
+
+NICE TO HAVE:
+[] need to fix table styling to conform to design specs
+[] either fix contact button at bottom of services page or remove
+[] fix styling of contact page to coordinate with other pages
+[] adjust body/main margin+padding and child element padding for a more maintainable organization

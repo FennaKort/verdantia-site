@@ -18,7 +18,7 @@
   --very-light-pink-full: #FAEAEA;
 
   /* 80% Opacity Colors */
-  --off-white-80: rgba(255, 252, 252, 0.8);
+  --off-white-90: rgba(255, 252, 252, 0.9);
 }
 
 /*----------------------------------------all pages---------------------------------------------*/
@@ -128,7 +128,7 @@ footer p::first-letter {
 }
 
 #tagContainer{
-  background-color: var(--off-white-80);
+  background-color: var(--off-white-90);
   width: 70%;
   height: 70%;
   padding: 1.5rem;
@@ -247,7 +247,7 @@ hr {
   /*height: 60em;*/
   background-color: var(--light-pink-full);
 }
-#priceContainer h2 {
+#pricingTableHeading {
   font-family: 'Inria Serif', serif;
   font-weight: 700;
   font-size: 4.5rem;
@@ -271,7 +271,10 @@ color: #A04D69;
 }
 .pricingTable td{
   width: 50%;
+}
 
+tr:nth-child(even) {
+  background-color: var(--very-light-pink-full);
 }
 /*table needs striped table formatting and need to figure out the proper width to coordinate with the rest of the site*/
 
