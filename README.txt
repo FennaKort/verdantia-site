@@ -43,7 +43,12 @@ HTML changes:
 - adjusted fieldsets and item order for form
 [x] needs regex for phone and email
 [x] needs reset button for form
-[] needs subject textarea for form
+[x] needs subject textarea for form - replaced with checkboxes to indicate type of inquiry
 [] would be nice to improve styling of radio buttons+labels
 [] would be nice to swap services select for checkboxes
-[] why won't the top and bottom padding for label.formField push out more space between the items?
+[x] why won't the top and bottom padding for label.formField push out more space between the items? - because <label> doesn't have height+width that can be set. I added a margin-bottom value to the input fields instead
+- validated all three html pages and corrected errors
+[] need to fix table styling
+[] table needs alternating colours
+[x] Use the first-letter pseudo element selector to style a first letter of (at least) one of 
+your paragraphs dieerently. - added to footer
