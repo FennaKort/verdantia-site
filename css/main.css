@@ -31,6 +31,10 @@
   font-size: 20px;
 }
 
+body {
+  background-color: var(--off-white-full);
+}
+
 /*all headings in inria serif*/
 h1 {
   font-family: 'Inria Serif', serif;
@@ -147,6 +151,7 @@ footer p::first-letter {
   justify-content: center;
   /*align-items: center;*/
   padding: 4rem 0;
+  background-color: var(--off-white-full);
 }
 
 .imageSection img{
@@ -284,20 +289,73 @@ tr:nth-child(even) {
   background-color: var(--very-light-pink-full);
 }
 
-#contactContainer {
+/*Call to Action/Contact Us Section*/
+#contactBG {
   height: 80vh;
   background-image: url(../images/calladiums-2-bg.jpg);
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contactContainer {
+  width: 60%;
+  height: 60%;
+  padding: 4%;
+  background-color: var(--off-white-90);
+  border-radius: 3rem;
+}
+
+#contactContainer a {
+  text-decoration: none;
+  color: var(--dark-pink-full);
+}
+
+#contactText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#contactContainer p {
+  font-family: "Inria Serif", 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+#contactContainer p:nth-child(2) {
+  font-weight: 600;
+  font-size: 4rem;
+  font-style: normal;
+}
+
+#contactBG img {
+  height: 50px;
+  width: auto;
+}
+
+#contactBG #rightImg {
+  float: right;
+}
+#contactBG #leftImg {
+  float: left;
 }
 
 /*---------------------------------------------CONTACT.HTML specific --------------------------------------*/
+body#contact-page {
+  background-color: var(--light-pink-full);
+}
 .contact-container {
-  background-color: var(--off-white-80);
+  background-color: var(--off-white-90);
   padding: 2rem;
   margin: 2rem auto;
-  max-width: 800px;
-  border: 0.2rem solid var(--dark-pink-full);
-  border-radius: 0.5rem;
+  max-width: 70%;
+  border: 0.1rem solid var(--pink-full);
+  accent-color: var(--pink-full);
 }
 
 .contact-container input[type="checkbox"],
@@ -307,7 +365,26 @@ tr:nth-child(even) {
 
 .contact-container :focus {
   outline: none;
-  box-shadow: 0.2rem 0.2rem 0.2rem var(--dark-pink-full);
+  box-shadow: 0.2rem 0.2rem var(--dark-pink-full);
+}
+
+.contact-container input[type="checkbox"]:focus,
+.contact-container input[type="radio"]:focus {
+  box-shadow: 0.2rem 0.2rem var(--dark-pink-full);
+  accent-color: var(--pink-full);
+} 
+
+.contact-container input[type="text"]:hover,
+.contact-container input[type="email"]:hover,
+.contact-container input[type="number"]:hover,
+.contact-container input[type="tel"]:hover, 
+.contact-container input[type="radio"]:hover,
+.contact-container input[type="checkbox"]:hover,
+.contact-container textarea:hover, 
+.contact-container select:hover {
+  background-color: var(--very-light-pink-full);
+  box-shadow: 0.2rem 0.2rem var(--dark-pink-full);
+  accent-color: var(--pink-full);
 }
 
 .contact-container h1 {
@@ -340,7 +417,6 @@ label.formField {
   padding: 0.5rem;
   margin-bottom: 1rem;
   border: 0.1rem solid var(--dark-pink-full);
-  border-radius: 0.3rem;
   background-color: var(--off-white-full);
   font-size: 1rem;
 }
@@ -355,7 +431,6 @@ label.formField {
 
 .contact-container fieldset {
   border: 0.1rem solid var(--pink-full);
-  border-radius: 0.3rem;
   padding: 1rem;
   margin-bottom: 1rem;
 }

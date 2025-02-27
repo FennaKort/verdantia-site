@@ -54,10 +54,14 @@ your paragraphs differently. - added to footer
 Remaining:
 MUST:
 [x] site needs logo
-[] float an image to the right side of a paragraph of your choice in your website. 
+[x] float an image to the right side of a paragraph of your choice in your website. 
+- where to even do this hmmmmm
+- contact button on offer page?? NOPE LOL that looks like dogshit
+	- I fixed it by doing two small images, one on either side of the text
 
 NICE TO HAVE:
 [] need to fix table styling to conform to design specs
-[] either fix contact button at bottom of services page or remove
-[] fix styling of contact page to coordinate with other pages
+[x] fix contact button at bottom of services page 
+[x] fix styling of contact page to coordinate with other pages
 [] adjust body/main margin+padding and child element padding for a more maintainable organization
+[] rename variables
