@@ -25,11 +25,13 @@
 
   <main>
     <section id="offerContainer" class="offers">
-      <figure id="offerFigure" class="imageSection">
-        <img id="offerImage" src="images/what-we-do-img.jpg" alt="A group of people take part in a Plant Party hosted by Verdantia. They sit around a table, potting up their new plants and sipping mocktails.">
-          <!--Photo by cottonbro studio: https://www.pexels.com/photo/people-planting-plants-9721367/-->
-        <figcaption id="offerCaption" class="overlay">Plant Party,<br>July 2024</figcaption>
-      </figure>
+      <div id="offerFigureContainer">
+        <figure id="offerFigure" class="imageSection">
+          <img id="offerImage" src="images/what-we-do-img.jpg" alt="A group of people take part in a Plant Party hosted by Verdantia. They sit around a table, potting up their new plants and sipping mocktails.">
+            <!--Photo by cottonbro studio: https://www.pexels.com/photo/people-planting-plants-9721367/-->
+          <figcaption id="offerImageCaption" class="overlay">Plant Party,<br>July 2024</figcaption>
+        </figure>
+      </div>
       <div id="offerContentSection">
         <h1>What We Offer</h1>
         <nav class="buttonsContainer">
@@ -87,42 +89,47 @@
     </section>
 
     <section id="priceContainer">
-      <table class="pricingTable">
-        <thead>
-          <tr>
-            <th colspan="2" id="pricingTableHeading">Price List</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td id="serviceColumn">Plant Parties</td>
-            <td id="priceColumn">
-              4-10 people: $80 + plants
-              <br>
-              10+ people: Please contact
-            </td>
-          </tr>
-          <tr>
-            <td>Pop Up Markets</td>
-            <td>$45/hour, minimum 2 hours</td>
-          </tr>
-          <tr>
-            <td>Plant Styling</td>
-            <td>Please contact for quote</td>
-          </tr>
-          <tr>
-            <td>Plants</td>
-            <td>
-              4"-10" available. <br>
-              Recommend 1 large plant or 2-3 small plants per participant
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div id="pricingTableContainer">
+        <div id="pricingTableBorder">
+          <table class="pricingTable">
+            <thead>
+              <tr>
+                <th colspan="2" id="pricingTableHeading">Price List</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="serviceColumn">Plant Parties</td>
+                <td id="priceColumn">
+                  4-10 people: $80 + plants
+                  <br>
+                  10+ people: Please contact
+                </td>
+              </tr>
+              <tr>
+                <td>Pop Up Markets</td>
+                <td>$45/hour, minimum 2 hours</td>
+              </tr>
+              <tr>
+                <td>Plant Styling</td>
+                <td>Please contact for quote</td>
+              </tr>
+              <tr>
+                <td>Plants</td>
+                <td>
+                  4"-10" available. <br>
+                  Recommend 1 large plant or 2-3 small plants per participant
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </section>
 
     <section id="contactBG">
       <!--Background Photo by TU HAN-WEI: https://www.pexels.com/photo/vibrant-leaves-of-caladium-22626119/-->
+      <h2>Contact Us Call to Action</h2>
       <div id="contactContainer">
         <a href="contact.html">
           <img id="leftImg" src="images/verdantia-logo-dark-pink-200x200-reversed-transparent.png" alt="logo">

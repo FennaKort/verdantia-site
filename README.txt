@@ -60,7 +60,7 @@ MUST:
 	- I fixed it by doing two small images, one on either side of the text
 
 NICE TO HAVE:
-[] need to fix table styling to conform to design specs
+[x] need to fix table styling to conform to design specs
 [x] fix contact button at bottom of services page 
 [x] fix styling of contact page to coordinate with other pages
 [] adjust body/main margin+padding and child element padding for a more maintainable organization

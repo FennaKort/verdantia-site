@@ -149,7 +149,7 @@ footer p::first-letter {
   width: 100%;
   display: flex;
   justify-content: center;
-  /*align-items: center;*/
+  align-items: center;
   padding: 4rem 0;
   background-color: var(--off-white-full);
 }
@@ -173,7 +173,6 @@ footer p::first-letter {
   position:relative;
   display: flex;
   flex-direction: column;
-  justify-content:first baseline;
 }
 
 #offerImage {
@@ -181,10 +180,9 @@ footer p::first-letter {
   height: auto;
 }
 
-#offerCaption {
+#offerImageCaption {
   position: absolute;
-  bottom: 2.5rem;
-  left: 0.5rem;
+  bottom: -2rem;
   border: #416A53 0.3rem solid;
   background-color: #FFFCFC;
   color: #11451F;
@@ -194,9 +192,12 @@ footer p::first-letter {
 
 #offerContentSection {
   padding-top: 1rem;
-  margin-right: auto;
   display: flex;
   flex-direction: column;
+}
+
+#offerContentSection h1 {
+  text-align: center;
 }
 
 #offerContentSection .buttonsContainer {
@@ -250,8 +251,9 @@ hr {
 }
 
 /*prices table section*/
-#priceContainer{
+#priceContainer {
   width: 100%;
+  padding: 4rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -259,6 +261,29 @@ hr {
   /*height: 60em;*/
   background-color: var(--light-pink-full);
 }
+
+#pricingTableContainer {
+  width: 70%;
+  height: 70%;
+  padding: 1.5rem;
+  background-color: var(--off-white-full);
+}
+
+#pricingTableBorder {
+  border: 0.1rem solid var(--pink-full);
+  padding: 0 5%;
+}
+
+.pricingTable {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  padding-bottom: 2rem;
+}
+
 #pricingTableHeading {
   font-family: 'Inria Serif', serif;
   font-weight: 700;
@@ -269,19 +294,8 @@ hr {
   text-align: center;
 }
 
-.pricingTable{
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  height: 80%;
-  background-color: var(--white-full);
-  font-size: 2em;
-}
-
-.pricingTable th{
-color: #A04D69;
-}
 .pricingTable td{
+  padding: 0.5rem 1rem;
   width: 50%;
 }
 
@@ -291,7 +305,7 @@ tr:nth-child(even) {
 
 /*Call to Action/Contact Us Section*/
 #contactBG {
-  height: 80vh;
+  height: 100vh;
   background-image: url(../images/calladiums-2-bg.jpg);
   background-size: cover;
   display: flex;
@@ -299,12 +313,25 @@ tr:nth-child(even) {
   justify-content: center;
 }
 
+#contactBG h2 {
+  visibility: hidden;
+  position: absolute;
+}
+
 #contactContainer {
-  width: 60%;
+  width: 50%;
   height: 60%;
   padding: 4%;
   background-color: var(--off-white-90);
   border-radius: 3rem;
+}
+
+#contactContainer:hover {
+  background-color: var(--off-white-full);
+}
+
+#contactContainer a:hover {
+  color: var(--pink-full)
 }
 
 #contactContainer a {
@@ -444,10 +471,11 @@ label.formField {
 
 /*Send Message button*/
 .contact-container button[type="submit"] {
+  display: inline;
   background-color: var(--green-full);
   color: var(--off-white-full);
   border: none;
-  margin: 1rem;
+  margin: 2rem;
   padding: 1rem;
   font-size: 1.5rem;
   cursor: pointer;
@@ -463,6 +491,7 @@ label.formField {
 
 /*Reset Form button*/
 .contact-container button[type="reset"] {
+  display: inline;
   background-color: var(--red-full);
   color: var(--off-white-full);
   border: none;
