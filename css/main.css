@@ -55,6 +55,7 @@ h3 {
 footer p {
   color: var(--light-green-full);
   text-align: center;
+  margin: 0.5rem 0;
 }
 footer p::first-letter {
   color: var(--green-full);
@@ -124,13 +125,12 @@ footer p::first-letter {
 
 #tagline {
   text-align: center;
-  /*still needing a solution to make this font scalable with browser size change*/
 }
 
 #tagOutline {
   width: 100%;
   height: 100%;
-  border: 0.2rem solid var(--pink-full);
+  border: 0.1rem solid var(--pink-full);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,9 +148,9 @@ footer p::first-letter {
 .offers {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
-  padding: 4rem 0;
+  padding: 2rem 0;
   background-color: var(--off-white-full);
 }
 
@@ -162,7 +162,6 @@ footer p::first-letter {
 
 /*What We Offer section*/
 #offerContainer{
-  padding-top: 4rem;
   background-color: var(--light-pink-full);
 }
 
@@ -183,11 +182,13 @@ footer p::first-letter {
 #offerImageCaption {
   position: absolute;
   bottom: -2rem;
-  border: #416A53 0.3rem solid;
+  border: #416A53 0.1rem solid;
+  box-shadow: 0.5rem 0.5rem var(--light-green-full);
   background-color: #FFFCFC;
   color: #11451F;
   font-family: 'Inria Serif', 'Times New Roman', Times, serif;
   padding: 0.5rem 1.5rem;
+  text-align: center;
 }
 
 #offerContentSection {
@@ -217,9 +218,9 @@ footer p::first-letter {
   box-shadow: 0.5rem 0.5rem var(--off-white-full);
   font-family: 'Inria Serif', 'Times New Roman', Times, serif;
   text-align:center;
-  color: #A04D69;
+  color: var(--dark-pink-full);
   font-size: 1.5rem;
-  border: #CC6D8A 0.1rem solid;
+  border: var(--pink-full) 0.1rem solid;
   margin: 1rem;
   padding: 1rem;
 }
@@ -240,12 +241,11 @@ footer p::first-letter {
   background-color: #FFFCFC;
 }
 
-
-
 hr {
-  width:80%;
-  height:0.2rem;
-  background-color: #CC6D8A;
+  width:70%;
+  height:0.1rem;
+  background-color: var(--pink-full);
+  border: none;
   margin-left:auto;
   margin-right:auto;
 }
@@ -390,8 +390,16 @@ body#contact-page {
   margin: 0 0.5rem;
 }
 
-.contact-container :focus {
+.contact-container input[type="text"]:focus,
+.contact-container input[type="email"]:focus,
+.contact-container input[type="number"]:focus,
+.contact-container input[type="tel"]:focus, 
+.contact-container input[type="radio"]:focus,
+.contact-container input[type="checkbox"]:focus,
+.contact-container textarea:focus, 
+.contact-container select:focus {
   outline: none;
+  background-color: var(--very-light-pink-full);
   box-shadow: 0.2rem 0.2rem var(--dark-pink-full);
 }
 
@@ -409,7 +417,6 @@ body#contact-page {
 .contact-container input[type="checkbox"]:hover,
 .contact-container textarea:hover, 
 .contact-container select:hover {
-  background-color: var(--very-light-pink-full);
   box-shadow: 0.2rem 0.2rem var(--dark-pink-full);
   accent-color: var(--pink-full);
 }
