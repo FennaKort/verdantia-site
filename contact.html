@@ -30,7 +30,7 @@
         <fieldset>
           <legend>Your Name</legend>
           <!--Salutation-->
-            <label for="salutation" class="formField">Salutation</label>
+            <label for="salutation" class="formField">Salutation *</label>
             <select id="salutation" name="salutation" required>
               <option value="">Select an option</option>
               <option value="Mrs.">Mrs.</option>
@@ -41,11 +41,11 @@
             </select>
             
           <!--First Name-->
-            <label for="firstName" class="formField">First Name</label>
+            <label for="firstName" class="formField">First Name *</label>
             <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required autofocus>
 
           <!--Last Name-->
-            <label for="lastName" class="formField">Last Name</label>
+            <label for="lastName" class="formField">Last Name *</label>
             <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
         </fieldset>
 
@@ -53,11 +53,11 @@
         <fieldset>
           <legend>How can we get in touch?</legend>
           <!-- Phone -->
-            <label for="phone" class="formField">Your Phone</label>
+            <label for="phone" class="formField">Your Phone *</label>
             <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}" placeholder="123-456-7890" required>
 
           <!-- Email -->
-            <label for="email" class="formField">Your Email</label>
+            <label for="email" class="formField">Your Email *</label>
             <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="example@example.com" required>    
 
           <!-- Preferred Contact Method (Radio Buttons) -->
@@ -80,7 +80,7 @@
         <fieldset>
           <legend>How Can We Help You?</legend>
           <!-- Inquiry Subject: Service Type (Checkbox Items) -->
-          <label>I am interested in...</label>
+          <label>I am interested in... *</label>
           <div id="service">
             <label>
               <input type="checkbox" name="service" value="plant-parties">Plant Parties
@@ -101,7 +101,7 @@
             <input type="number" id="party-size" name="party-size" placeholder="Enter number of participants">   
 
           <!-- Additional Message -->
-          <label for="message">Additional Information</label>
+          <label for="message">Additional Information *</label>
           <textarea id="message" name="message" rows="5" placeholder="Let us know more about your needs" required></textarea>
         </fieldset>
   

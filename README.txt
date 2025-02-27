@@ -59,6 +59,8 @@ MUST:
 - contact button on offer page?? NOPE LOL that looks like dogshit
 	- I fixed it by doing two small images, one on either side of the text
 
+[x] NEED TO VISUALLY DISTINGUISH REQUIREDS FROM NONREQS ON FORM
+
 NICE TO HAVE:
 [x] need to fix table styling to conform to design specs
 [x] fix contact button at bottom of services page 
