@@ -65,5 +65,5 @@ NICE TO HAVE:
 [x] need to fix table styling to conform to design specs
 [x] fix contact button at bottom of services page 
 [x] fix styling of contact page to coordinate with other pages
-[] adjust body/main margin+padding and child element padding for a more maintainable organization
-[] rename variables
+[] adjust body/main margin+padding and child element padding for a more maintainable organization - may come back to in the future
+[] rename variables - jim says consistent format is best, but he won't mark down for it - may come back to this in the future
