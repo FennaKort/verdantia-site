@@ -1,10 +1,14 @@
-General Task Distribution Draft 
+# Project Description
+Verdantia is a demo website for a hypothetical company selling plant-related services. The Verdantia site is designed to appeal to creative urban millenials who value incorporating meaningful experiences into their daily lives. Verdantia offers these experiences through their curated events that let their customers bring the beauty of plants into their every day spaces. The website communicates with these target consumers through lush images of calladiums, a refined yet fun green and pink colour pallette, and site organization that allows visitors to quickly and easily learn about what Verdantia offers and how to inquire about Verdantia's services. 
+
+# General Task Distribution Draft 
 site design - Fenna focus
 site content - Both focus
 html - Damon focus 
 css - Fenna focus
 conformity to project reqs - distribute 50/50 so we've got equal eyes making sure we've got everything
 
+# Task Log
 5 Feb 25
 - Damon made discord server for communication
 - Fenna proposed various ideas for site
@@ -19,7 +23,7 @@ conformity to project reqs - distribute 50/50 so we've got equal eyes making sur
 - Fenna continued draft of site design https://www.figma.com/proto/rFTSPAskqrZJrXROk0hsXx/Plant-Site?node-id=2-2
 
 10-11 Feb 25
-- Damon worked on HTML and css
+- Damon worked on majority of HTML; also on css
 
 13 Feb 25
 - Fenna working on CSS; primarily adjusting display for homepage and reorganizing font heirarchy structure
@@ -36,7 +40,7 @@ HTML changes:
 - resized all images according to design specs
 - replaced outer divs on services page with section elements for improved semantic html
 
-22 Feb 25. Damon worked on form, button links, and form css.
+22 Feb 25. Damon worked on form html, button links html, and form css.
 
 25 Feb 25. Fenna
 - adjusted fieldsets and item order for form
@@ -51,6 +55,7 @@ HTML changes:
 [x] Use the first-letter pseudo element selector to style a first letter of (at least) one of 
 your paragraphs differently. - added to footer
 
+26 Feb 25. Fenna working:
 Remaining:
 MUST:
 [x] site needs logo
@@ -67,3 +72,5 @@ NICE TO HAVE:
 [x] fix styling of contact page to coordinate with other pages
 [] adjust body/main margin+padding and child element padding for a more maintainable organization - may come back to in the future
 [] rename variables - jim says consistent format is best, but he won't mark down for it - may come back to this in the future
+
+28 Feb 25. Fenna giving final pass to project reqs and packaging zip file for submission. 
