@@ -1,7 +1,17 @@
 # Project Description
 Verdantia is a demo website for a hypothetical company selling plant-related services. The Verdantia site is designed to appeal to creative urban millenials who value incorporating meaningful experiences into their daily lives. Verdantia offers these experiences through their curated events that let their customers bring the beauty of plants into their every day spaces. The website communicates with these target consumers through lush images of calladiums, a refined yet fun green and pink colour pallette, and site organization that allows visitors to quickly and easily learn about what Verdantia offers and how to inquire about Verdantia's services. 
 
-# General Task Distribution Draft 
+# General Task Distribution - Part 2
+
+
+# Task Log - Part 2
+31 Mar. Fenna updating page organization and stylesheet links.
+
+
+
+--------------------------------------------------------------------------
+
+# General Task Distribution - Part 1 
 site design - Fenna focus
 site content - Both focus
 html - Damon focus 
