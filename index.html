@@ -19,8 +19,8 @@
         </div>
         <nav id="header-buttons">
             <a href="index.html" class="banner-button current-page">Home</a>
-            <a href="pages/services.html" class="banner-button">Services</a>
-            <a href="pages/contact.html" class="banner-button">Contact</a>
+            <a href="#what-we-offer" class="banner-button">Services</a>
+            <a href="#contact-us" class="banner-button">Contact</a>
         </nav>
     </header>
 
@@ -50,59 +50,61 @@
             </div>
             <div id="what-we-offer-content-section">
               <h2>What We Offer</h2>
-              <nav>
+              <nav id="what-we-offer-buttons">
                 <!--maybe contain it in an unordered list-->
-                <a href="#partyContainer" class="buttons">Plant Parties</a>
-                <a href="#marketContainer" class="buttons">Pop Up Markets</a>
-                <a href="#stylingContainer" class="buttons">Plant Styling</a>
+                <a href="#plant-parties" class="offer-button">Plant Parties</a>
+                <a href="#popup-markets" class="offer-button">Pop Up Markets</a>
+                <a href="#plant-styling" class="offer-button">Plant Styling</a>
               </nav>
             </div>
           </section>
-      
-          <section id="plant-parties" class="full-width-flex-container">
-            <div class="image-section">
-              <img src="images/plant-parties-img.jpg" alt="A close up of a woman's hand scooping potting soil during a Plant Party.">
-                <!--Photo by cottonbro studio: https://www.pexels.com/photo/a-person-getting-a-soil-9721507/-->
-            </div>
-            <div class="content-section">
-              <h3>Plant Parties</h3>
-              <p>
-                Bring the joy of greenery to your gatherings! Whether it's a birthday, bridal shower, or just a fun hangout, our plant parties are perfect for groups of all sizes. Create your own plant arrangements while bonding with friends and learning plant care tips. Let's grow together!
-              </p>
-      
-            </div>
-          </section>
-            <hr>
-          <section id="popup-markets" class="full-width-flex-container">
-            <div class="image-section">
-              <img src="images/popup-markets-img.jpg" alt="A person holds a plant they purchased at one of our Popup Markets.">
-                <!--Photo by Dmitriy Ganin: https://www.pexels.com/photo/unrecognizable-woman-with-flowerpot-in-garden-7760789/-->
-            </div>
-            <div class="content-section">
-              <h3>Pop Up Markets</h3>
-              <p>
-                Catch us at local markets and events! We bring a curated selection of vibrant, healthy plants and unique
-                accessories to your community. It's the perfect opportunity to discover your next favorite green companion
-                locally.
-              </p>
-            </div>
-          </section>
-            <hr>
-          <section id="plant-styling" class="full-width-flex-container">
-            <div class="image-section">
-              <img src="images/plant-styling-img.jpg" alt="An example of our plant styling services showing greenery brightening up a cafe seating area.">
-                <!--Photo by Valeria Boltneva: https://www.pexels.com/photo/photography-of-table-and-chairs-near-plants-827518/-->
-            </div>
-            <div class="content-section">
-              <h3>Plant Styling</h3>
-              <p>
-                Transform your space with greenery! Our plant styling services are tailored to your home or business, creating
-                beautiful, functional, and low-maintenance plant displays. Not sure how to care for your plants? Check out <a
-                  href="https://www.howmanyplants.com" target="_blank">this helpful plant care guide</a> to get started. From
-                statement pieces to subtle touches, we'll help you bring your vision to life.
-              </p>
-            </div>
-          </section>
+          
+          <div class="offer-details">
+            <section id="plant-parties" class="full-width-flex-container">
+                <div class="image-section">
+                <img src="images/plant-parties-img.jpg" alt="A close up of a woman's hand scooping potting soil during a Plant Party.">
+                    <!--Photo by cottonbro studio: https://www.pexels.com/photo/a-person-getting-a-soil-9721507/-->
+                </div>
+                <div class="content-section">
+                <h3>Plant Parties</h3>
+                <p>
+                    Bring the joy of greenery to your gatherings! Whether it's a birthday, bridal shower, or just a fun hangout, our plant parties are perfect for groups of all sizes. Create your own plant arrangements while bonding with friends and learning plant care tips. Let's grow together!
+                </p>
+        
+                </div>
+            </section>
+                <hr>
+            <section id="popup-markets" class="full-width-flex-container">
+                <div class="image-section">
+                <img src="images/popup-markets-img.jpg" alt="A person holds a plant they purchased at one of our Popup Markets.">
+                    <!--Photo by Dmitriy Ganin: https://www.pexels.com/photo/unrecognizable-woman-with-flowerpot-in-garden-7760789/-->
+                </div>
+                <div class="content-section">
+                <h3>Pop Up Markets</h3>
+                <p>
+                    Catch us at local markets and events! We bring a curated selection of vibrant, healthy plants and unique
+                    accessories to your community. It's the perfect opportunity to discover your next favorite green companion
+                    locally.
+                </p>
+                </div>
+            </section>
+                <hr>
+            <section id="plant-styling" class="full-width-flex-container">
+                <div class="image-section">
+                <img src="images/plant-styling-img.jpg" alt="An example of our plant styling services showing greenery brightening up a cafe seating area.">
+                    <!--Photo by Valeria Boltneva: https://www.pexels.com/photo/photography-of-table-and-chairs-near-plants-827518/-->
+                </div>
+                <div class="content-section">
+                <h3>Plant Styling</h3>
+                <p>
+                    Transform your space with greenery! Our plant styling services are tailored to your home or business, creating
+                    beautiful, functional, and low-maintenance plant displays. Not sure how to care for your plants? Check out <a
+                    href="https://www.howmanyplants.com" target="_blank">this helpful plant care guide</a> to get started. From
+                    statement pieces to subtle touches, we'll help you bring your vision to life.
+                </p>
+                </div>
+            </section>
+          </div>
       
           <section id="price-list">
             <div class="presentation-container">
@@ -145,7 +147,7 @@
     <!---------------------------------
     CONTACT FORM
     ---------------------------------->
-          <div class="contact-container">
+          <div id="contact-us" class="contact-container">
             <h2>Contact Us</h2>
             <form action="mailto:dirwi911@mtroyal.ca" method="POST" enctype="text/plain">
               <!-- Name -->

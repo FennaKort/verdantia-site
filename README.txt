@@ -16,12 +16,13 @@ To-do:
 [x]replace what we offer and contact us h1s with h2s and ensure good document outline
 
 []put fullsize styles into correct media queries
+[]main needs to be <=790px in large size
 
 [x]may be able to consolidate styles for price table container and tagline container
 []may be able to consolidate styles for what we offer and contact form hover styles
 [x]may be able to remove styles for entire call to action section at around line 370
-[]add scrollbar-gutter and style scrollbar
-[]adjust .buttons class name
+[x]add scrollbar-gutter and style scrollbar
+[]adjust .buttons class name to be more descriptive
 
 
 --------------------------------------------------------------------------

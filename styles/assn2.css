@@ -38,7 +38,7 @@ DEFAULT STYLES (<590px+all)
 }
 
 body {
-  background-color: var(--off-white-full);
+  background-color: var(--light-pink-full);
   scrollbar-gutter: stable both-edges;
   scrollbar-color: var(--green-full) var(--light-green-full);
 }
@@ -52,6 +52,7 @@ h1, h2 {
   font-weight: 700;
   font-size: 4.5rem;
   font-size: 12vmin;
+  text-align: center;
   color: var(--transparent);/* Make the inside transparent */
   -webkit-text-stroke: 0.1rem var(--dark-pink-full);/* Outline color and thickness */
 }
@@ -258,7 +259,7 @@ flex-direction: column;
 justify-content: space-evenly;
 }
 
-#what-we-offer-content-section .buttons {
+#what-we-offer-content-section .offer-button {
 text-decoration: none;
 background-color: #FFFCFC;
 box-shadow: 0.5rem 0.5rem var(--off-white-full);
@@ -271,13 +272,16 @@ margin: 1rem;
 padding: 1rem;
 }
 
-#what-we-offer-content-section .buttons:hover {
+#what-we-offer-content-section .offer-button:hover {
 background-color: var(--very-light-pink-full);
 box-shadow: 0.5rem 0.5rem var(--dark-pink-full);
 border: var(--dark-pink-full) 0.1rem solid;
 }
 
 /*Offers Details section*/
+.offer-details {
+	background-color: var(--off-white-full);
+}
 .content-section{
 width: 30%;
 margin-left: 2em;
