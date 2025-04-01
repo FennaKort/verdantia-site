@@ -28,9 +28,9 @@
     <!---------------------------------
     LANDING SCREEN SECTION
     ---------------------------------->
-        <!--Background Photo by Madison Inouye: https://www.pexels.com/photo/variegated-leafed-plant-1403400/-->    
         <div id="hero-section" class="full-width-flex-container">
-            <div class="presentation-container">
+        <!--Background Photo by Madison Inouye: https://www.pexels.com/photo/variegated-leafed-plant-1403400/-->    
+            <div class="presentation-container responsive-width-container">
                 <div class="presentation-container-outline full-width-flex-container">
                     <h1 id="tagline">It's a beautiful day<br>for new plants</h1>
                 </div>
@@ -40,8 +40,9 @@
     <!---------------------------------
     OFFERS SECTION
     ---------------------------------->
+        <div class="responsive-width-container">
         <section id="what-we-offer" class="full-width-flex-container">
-            <div id="what-we-offer-container"> <!--container necessary as wrapper for flex item-->
+            <div id="what-we-offer-figure-container"> <!--container necessary as wrapper for flex item-->
               <figure class="image-section">
                 <img id="what-we-offer-img" src="images/what-we-do-img.jpg" alt="A group of people take part in a Plant Party hosted by Verdantia. They sit around a table, potting up their new plants and sipping mocktails.">
                   <!--Photo by cottonbro studio: https://www.pexels.com/photo/people-planting-plants-9721367/-->
@@ -58,8 +59,9 @@
               </nav>
             </div>
           </section>
+          </div>
           
-          <div class="offer-details">
+          <div id="offer-details">
             <section id="plant-parties" class="full-width-flex-container">
                 <div class="image-section">
                 <img src="images/plant-parties-img.jpg" alt="A close up of a woman's hand scooping potting soil during a Plant Party.">
@@ -105,8 +107,10 @@
                 </div>
             </section>
           </div>
-      
-          <section id="price-list">
+    <!---------------------------------
+    PRICE LIST
+    ---------------------------------->
+          <section id="price-list" class="responsive-width-container">
             <div class="presentation-container">
               <div class="presentation-container-outline">
                 <table class="price-table">
@@ -147,7 +151,8 @@
     <!---------------------------------
     CONTACT FORM
     ---------------------------------->
-          <div id="contact-us" class="contact-container">
+          <div id="contact-us" class="contact-container responsive-width-container presentation-container">
+            <div class="presentation-container-outline">
             <h2>Contact Us</h2>
             <form action="mailto:dirwi911@mtroyal.ca" method="POST" enctype="text/plain">
               <!-- Name -->
@@ -226,6 +231,7 @@
               <!-- Reset Button -->
               <button type="reset">Reset the Form</button>        
             </form>
+            </div>
           </div>
     </main>
 

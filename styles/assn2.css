@@ -53,74 +53,110 @@ h1, h2 {
   font-size: 4.5rem;
   font-size: 12vmin;
   text-align: center;
-  color: var(--transparent);/* Make the inside transparent */
-  -webkit-text-stroke: 0.1rem var(--dark-pink-full);/* Outline color and thickness */
+  color: var(--dark-pink-full)
+}
+/*-----------------------------------------------------
+DEFAULTS STYLES LARGE SCREEN (>790px)
+-----------------------------------------------------*/
+
+@media (min-width: 790px) {
+	h1, h2{
+		color: var(--transparent);/* Make the inside transparent */
+		-webkit-text-stroke: 0.1rem var(--dark-pink-full);/* Outline color and thickness */
+	}
 }
 
-
-/*other reusable components*/
+/*-----------------------------------------------------
+REUSABLE COMPONENTS STYLES (<590px+all)
+-----------------------------------------------------*/
 .full-width-flex-container {
-	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 2rem 0;
 } 
+
+.responsive-width-container {
+	margin: 0.75rem;
+}
+
 .presentation-container {
 	background-color: var(--off-white-90);
-	width: 70%;
 	height: 70%;
-	padding: 1.5rem;
+	padding: 0.75rem;
 }
 
 .presentation-container-outline {
 	width: 100%;
 	height: 100%;
 	border: 0.1rem solid var(--pink-full);
-
+	padding: 0.325rem;
 }
   
-
-
 /*-----------------------------------------------------
-DEFAULT STYLES MEDIUM SCREEN (590px-790px)
+reusable components STYLES MEDIUM SCREEN (590px-790px)
 -----------------------------------------------------*/
-@media (min-width: 590px) and (max-width: 789px) {
-
+@media (min-width: 590px) {
+	.responsive-width-container {
+		margin: 1.5rem;
+	}
+	.presentation-container {
+		padding: 1.5rem;
+	}
+	.presentation-container-outline {
+		padding: 0.75rem;
+	}
 }
 
 /*-----------------------------------------------------
-DEFAULT STYLES LARGE SCREEN (>790px)
+reusable components STYLES LARGE SCREEN (>790px)
 -----------------------------------------------------*/
 
 @media (min-width: 790px) {
-
+	.responsive-width-container {
+		max-width: 790px;
+		margin: 2rem auto;
+	}
+	.presentation-container {
+		width: 100%;
+		padding: 1.5rem;
+	}
+	
 }
-
-
 
 /*------------------------------------------
 DEFAULT HEADER STYLES (<590px+all)
 ------------------------------------------*/
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: var(--green-full);
-  padding: 0 1rem;
   color: var(--off-white-full);
-  height: 2rem;
+  height: 4rem;
+  position: sticky;
+  top: 0px;
+  z-index: 999;
 }
+/*adjustments for sticky header scrolling on different mobile device sizes*/
+@media (orientation: portrait) and ((min-width: 374px) and (max-height: 700px)) {
+	header {
+		top: -7px;
+	}
+}
+@media (orientation: portrait) and ((max-width:589px) and (min-height: 820px)) {
+	header {
+		top: -25px;
+	}
+}
+
 
 #site-name, #header-buttons {
   display: flex;
+  justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 2rem;
 }
 
 #site-name img {
-  height: 70%;
-  padding: 0px 10px;
+	display: none;
 }
 
 #site-name h2 { 
@@ -135,7 +171,6 @@ header {
   color: var(--off-white-full);
   padding: 0 25px;
   background-color: var(--green-full);
-  border-radius: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,28 +182,41 @@ header {
   /* pale green on hover */
 }
 
+/*
 .current-page {
   background-color: var(--light-green-full);
-  /* pale green when on current page */
 }
+*/
+
 /*-----------------------------------------------------
 HEADER STYLES MEDIUM SCREEN (590px-790px)
 -----------------------------------------------------*/
-@media (min-width: 590px) and (max-width: 789px) {
-
+@media (min-width: 590px) {
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 0.5rem;
+		height: 100%;
+	}
+	#site-name img {
+		display: block;
+		height: 75%;
+		padding: 0px 10px;
+	  }
 }
 
 /*-----------------------------------------------------
 HEADER STYLES LARGE SCREEN (>790px)
 -----------------------------------------------------*/
 @media (min-width: 790px) {
-
+	#site-name img {
+		height: 70%;
+	}
 }
 
 /*-----------------------------------------------------
 -----------------------------------------------------*/
-
-
 
 /*---------------------------------------------
 Banner specific 
@@ -176,27 +224,20 @@ Banner specific
 #hero-section {
   background: url('../images/calladiums-1-bg.jpg') no-repeat center center;
   background-size: cover;
-  height: calc(100vh - 2rem);
-  /* Full screen( minus the header height */
 }
 
 #tagline {
   text-align: center;
 }
 
-
 /*-----------------------------------------------------
-SPECIFIC CONTENT STYLES MEDIUM SCREEN (590px-790px)
------------------------------------------------------*/
-@media (min-width: 590px) and (max-width: 789px) {
-
-}
-
-/*-----------------------------------------------------
-SPECIFIC CONTENT STYLES LARGE SCREEN (>790px)
+Banner STYLES LARGE SCREEN (>790px)
 -----------------------------------------------------*/
 @media (min-width: 790px) {
-
+	#hero-section {
+		height: calc(100vh - 2rem);
+		/* Full screen( minus the header height */
+	  }
 }
 
 
@@ -279,7 +320,7 @@ border: var(--dark-pink-full) 0.1rem solid;
 }
 
 /*Offers Details section*/
-.offer-details {
+#offer-details {
 	background-color: var(--off-white-full);
 }
 .content-section{
@@ -296,10 +337,10 @@ margin-left:auto;
 margin-right:auto;
 }
 
-/*prices table section*/
+/*----------------------------------
+prices table section
+----------------------------------*/
 #price-list {
-width: 100%;
-padding: 4rem 0;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -307,15 +348,7 @@ justify-content: center;
 background-color: var(--light-pink-full);
 }
 
-.price-table {
-margin-left: auto;
-margin-right: auto;
-width: 100%;
-height: 100%;
-font-size: 2rem;
-padding: 1rem 2rem;
-padding-bottom: 2rem;
-}
+
 
 #price-table-heading {
 font-family: 'Inria Serif', serif;
@@ -328,29 +361,43 @@ text-align: center;
 }
 
 .price-table td{
-padding: 0.5rem 1rem;
+padding: 0.5rem;
 width: 50%;
 }
 
+/*
 tr:nth-child(even) {
 background-color: var(--very-light-pink-full);
+} */
+
+/*-----------------------------------------------------
+PRICES TABLE STYLES MEDIUM SCREEN (590px-790px)
+-----------------------------------------------------*/
+@media (min-width: 590px) {
+	#price-list {
+		padding: 4rem 0;
+	}
+	.price-table td{
+		padding: 0.5rem 1rem;
+	}
 }
 
+/*-----------------------------------------------------
+PRICES TABLE STYLES LARGE SCREEN (>790px)
+-----------------------------------------------------*/
+@media (min-width: 790px) {
+	#price-table {
+		padding: 1rem 2rem;
+		padding-bottom: 2rem;
+	}
+}
 
 
 
 /*---------------------------------------------
 CONTACT FORM specific 
 --------------------------------------*/
-body#contact-page {
-background-color: var(--light-pink-full);
-}
 .contact-container {
-background-color: var(--off-white-90);
-padding: 2rem;
-margin: 2rem auto;
-max-width: 70%;
-border: 0.1rem solid var(--pink-full);
 accent-color: var(--pink-full);
 }
 

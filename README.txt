@@ -15,14 +15,20 @@ To-do:
 [x]remove duplicate styles/consolidate styles where possible
 [x]replace what we offer and contact us h1s with h2s and ensure good document outline
 
-[]put fullsize styles into correct media queries
-[]main needs to be <=790px in large size
+[x]put fullsize styles into correct media queries
+[x]main needs to be <=790px in large size
+	-because of full width backgrounds, the site needs a workaround instead
+[x]adjust table styles to be responsive
+- added responsive sticky nav :3
+	[]adjustments needed for:
+	- iphone 12/13 pro max - not enough smol
+	- galaxy s20+ - too smol
 
 [x]may be able to consolidate styles for price table container and tagline container
 []may be able to consolidate styles for what we offer and contact form hover styles
 [x]may be able to remove styles for entire call to action section at around line 370
 [x]add scrollbar-gutter and style scrollbar
-[]adjust .buttons class name to be more descriptive
+[x]adjust .buttons class name to be more descriptive
 
 
 --------------------------------------------------------------------------
