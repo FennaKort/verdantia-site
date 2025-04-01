@@ -1,0 +1,510 @@
+@import url(https://fonts.bunny.net/css?family=inria-sans:300|inria-serif:300,400,700);
+
+:root {
+  /* 100% Opacity Colors */
+  --black-full: #000000; /*would like to make slighty less harsh*/
+
+  /*primary*/
+  --dark-pink-full: #A04D69; 
+  --pink-full: #CC6D8A; 
+  
+  /*secondary / light background*/
+  --light-pink-full: #F6DDDD; 
+  --very-light-pink-full: #FAEAEA; /*lightest emphasis*/
+  --off-white-full: #FFFCFC;
+  --off-white-90: rgba(255, 252, 252, 0.9);
+  /* 0% Opacity Colours */
+  --transparent: #FFFCFC00; /*secondary-0*/
+
+  /*tertiary*/
+  --green-full: #11451F; /*tertiary*/
+  --light-green-full: #416A53; /*emphasis green*/
+
+	/*negative state*/
+  --red-full: #c83d3d; 
+  --light-red-full: #eb5454; 
+}
+
+/*-----------------------------------------------------
+DEFAULT STYLES (<590px+all)
+-----------------------------------------------------*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /*all general text in Inria Sans, base font size 20px*/
+  font-family: "Inria Sans", sans-serif;
+  font-size: 20px;
+}
+
+body {
+  background-color: var(--off-white-full);
+  scrollbar-gutter: stable both-edges;
+  scrollbar-color: var(--green-full) var(--light-green-full);
+}
+
+/*all headings in inria serif*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inria Serif', serif;
+}
+
+h1, h2 {
+  font-weight: 700;
+  font-size: 4.5rem;
+  font-size: 12vmin;
+  color: var(--transparent);/* Make the inside transparent */
+  -webkit-text-stroke: 0.1rem var(--dark-pink-full);/* Outline color and thickness */
+}
+
+
+/*other reusable components*/
+.full-width-flex-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 0;
+} 
+.presentation-container {
+	background-color: var(--off-white-90);
+	width: 70%;
+	height: 70%;
+	padding: 1.5rem;
+}
+
+.presentation-container-outline {
+	width: 100%;
+	height: 100%;
+	border: 0.1rem solid var(--pink-full);
+
+}
+  
+
+
+/*-----------------------------------------------------
+DEFAULT STYLES MEDIUM SCREEN (590px-790px)
+-----------------------------------------------------*/
+@media (min-width: 590px) and (max-width: 789px) {
+
+}
+
+/*-----------------------------------------------------
+DEFAULT STYLES LARGE SCREEN (>790px)
+-----------------------------------------------------*/
+
+@media (min-width: 790px) {
+
+}
+
+
+
+/*------------------------------------------
+DEFAULT HEADER STYLES (<590px+all)
+------------------------------------------*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--green-full);
+  padding: 0 1rem;
+  color: var(--off-white-full);
+  height: 2rem;
+}
+
+#site-name, #header-buttons {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+#site-name img {
+  height: 70%;
+  padding: 0px 10px;
+}
+
+#site-name h2 { 
+	font-weight: 400;
+	font-size: 1.5rem; 
+	color: var(--off-white-full);
+	-webkit-text-stroke: 0;
+}
+
+.banner-button {
+  text-decoration: none;
+  color: var(--off-white-full);
+  padding: 0 25px;
+  background-color: var(--green-full);
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.banner-button:hover {
+  background-color: var(--light-green-full);
+  /* pale green on hover */
+}
+
+.current-page {
+  background-color: var(--light-green-full);
+  /* pale green when on current page */
+}
+/*-----------------------------------------------------
+HEADER STYLES MEDIUM SCREEN (590px-790px)
+-----------------------------------------------------*/
+@media (min-width: 590px) and (max-width: 789px) {
+
+}
+
+/*-----------------------------------------------------
+HEADER STYLES LARGE SCREEN (>790px)
+-----------------------------------------------------*/
+@media (min-width: 790px) {
+
+}
+
+/*-----------------------------------------------------
+-----------------------------------------------------*/
+
+
+
+/*---------------------------------------------
+Banner specific 
+--------------------------------------*/
+#hero-section {
+  background: url('../images/calladiums-1-bg.jpg') no-repeat center center;
+  background-size: cover;
+  height: calc(100vh - 2rem);
+  /* Full screen( minus the header height */
+}
+
+#tagline {
+  text-align: center;
+}
+
+
+/*-----------------------------------------------------
+SPECIFIC CONTENT STYLES MEDIUM SCREEN (590px-790px)
+-----------------------------------------------------*/
+@media (min-width: 590px) and (max-width: 789px) {
+
+}
+
+/*-----------------------------------------------------
+SPECIFIC CONTENT STYLES LARGE SCREEN (>790px)
+-----------------------------------------------------*/
+@media (min-width: 790px) {
+
+}
+
+
+/*---------------------------------------------SERVICES.HTML specific --------------------------------------*/
+/*General styling for sections with image plus text*/
+.image-section img{
+	border-radius: 50%;
+	max-width: 20vw;
+	height: auto;
+  }
+  
+/*What We Offer section*/
+#what-we-offer{
+background-color: var(--light-pink-full);
+}
+
+#what-we-offer figure {
+padding-left: 1rem;
+padding-right: 2rem;
+margin-left: auto;
+position: relative;
+display: flex;
+flex-direction: column;
+}
+
+#what-we-offer-img {
+max-width: 30vw;
+}
+
+#what-we-offer-img-caption {
+position: absolute;
+bottom: -2rem;
+border: #416A53 0.1rem solid;
+box-shadow: 0.5rem 0.5rem var(--light-green-full);
+background-color: #FFFCFC;
+color: #11451F;
+font-family: 'Inria Serif', 'Times New Roman', Times, serif;
+padding: 0.5rem 1.5rem;
+text-align: center;
+}
+
+#what-we-offer-content-section {
+padding-top: 1rem;
+display: flex;
+flex-direction: column;
+}
+
+#what-we-offer-content-section h1 {
+text-align: center;
+}
+
+#what-we-offer-content-section nav {
+/*properties as flex item of #what-we-offer-content-section*/
+flex-grow: 1;
+padding: 0 1rem;
+
+/*properties as flex container of individual buttons*/
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+
+#what-we-offer-content-section .buttons {
+text-decoration: none;
+background-color: #FFFCFC;
+box-shadow: 0.5rem 0.5rem var(--off-white-full);
+font-family: 'Inria Serif', 'Times New Roman', Times, serif;
+text-align:center;
+color: var(--dark-pink-full);
+font-size: 1.5rem;
+border: var(--pink-full) 0.1rem solid;
+margin: 1rem;
+padding: 1rem;
+}
+
+#what-we-offer-content-section .buttons:hover {
+background-color: var(--very-light-pink-full);
+box-shadow: 0.5rem 0.5rem var(--dark-pink-full);
+border: var(--dark-pink-full) 0.1rem solid;
+}
+
+/*Offers Details section*/
+.content-section{
+width: 30%;
+margin-left: 2em;
+}
+
+hr {
+width:70%;
+height:0.1rem;
+background-color: var(--pink-full);
+border: none;
+margin-left:auto;
+margin-right:auto;
+}
+
+/*prices table section*/
+#price-list {
+width: 100%;
+padding: 4rem 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: var(--light-pink-full);
+}
+
+.price-table {
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+height: 100%;
+font-size: 2rem;
+padding: 1rem 2rem;
+padding-bottom: 2rem;
+}
+
+#price-table-heading {
+font-family: 'Inria Serif', serif;
+font-weight: 700;
+font-size: 4.5rem;
+font-size: 12vmin;
+color: var(--transparent);/* Make the inside transparent */
+-webkit-text-stroke: 0.1rem var(--dark-pink-full);/* Outline color and thickness */
+text-align: center;
+}
+
+.price-table td{
+padding: 0.5rem 1rem;
+width: 50%;
+}
+
+tr:nth-child(even) {
+background-color: var(--very-light-pink-full);
+}
+
+
+
+
+/*---------------------------------------------
+CONTACT FORM specific 
+--------------------------------------*/
+body#contact-page {
+background-color: var(--light-pink-full);
+}
+.contact-container {
+background-color: var(--off-white-90);
+padding: 2rem;
+margin: 2rem auto;
+max-width: 70%;
+border: 0.1rem solid var(--pink-full);
+accent-color: var(--pink-full);
+}
+
+.contact-container input[type="checkbox"],
+.contact-container input[type="radio"] {
+margin: 0 0.5rem;
+}
+
+.contact-container input[type="text"]:focus,
+.contact-container input[type="email"]:focus,
+.contact-container input[type="number"]:focus,
+.contact-container input[type="tel"]:focus, 
+.contact-container input[type="radio"]:focus,
+.contact-container input[type="checkbox"]:focus,
+.contact-container textarea:focus, 
+.contact-container select:focus {
+outline: none;
+background-color: var(--very-light-pink-full);
+box-shadow: 0.2rem 0.2rem var(--dark-pink-full);
+}
+
+.contact-container input[type="checkbox"]:focus,
+.contact-container input[type="radio"]:focus {
+box-shadow: 0.2rem 0.2rem var(--dark-pink-full);
+accent-color: var(--pink-full);
+} 
+
+.contact-container input[type="text"]:hover,
+.contact-container input[type="email"]:hover,
+.contact-container input[type="number"]:hover,
+.contact-container input[type="tel"]:hover, 
+.contact-container input[type="radio"]:hover,
+.contact-container input[type="checkbox"]:hover,
+.contact-container textarea:hover, 
+.contact-container select:hover {
+box-shadow: 0.2rem 0.2rem var(--dark-pink-full);
+accent-color: var(--pink-full);
+}
+
+.contact-container h1 {
+text-align: center;
+}
+
+.contact-container form {
+display: flex;
+flex-direction: column;
+}
+
+.contact-container label {
+font-weight: bold;
+margin-top: 0.5rem;
+color: var(--dark-pink-full);
+}
+
+label.form-field {
+padding: 0.2rem 0;
+}
+
+.contact-container input[type="text"],
+.contact-container input[type="email"],
+.contact-container input[type="number"],
+.contact-container input[type="tel"],
+.contact-container textarea,
+.contact-container select {
+width: 100%;
+padding: 0.5rem;
+margin-bottom: 1rem;
+border: 0.1rem solid var(--dark-pink-full);
+background-color: var(--off-white-full);
+font-size: 1rem;
+}
+
+.contact-container #service {
+margin-bottom: 1rem; 
+}
+
+.contact-container textarea {
+resize: vertical;
+}
+
+.contact-container fieldset {
+border: 0.1rem solid var(--pink-full);
+padding: 1rem;
+margin-bottom: 1rem;
+}
+
+.contact-container fieldset legend {
+font-family: 'Inria Serif', serif;
+font-size: 1.5rem;
+color: var(--pink-full);
+padding: 0 0.5rem;
+}
+
+/*Send Message button*/
+.contact-container button[type="submit"] {
+display: inline;
+background-color: var(--green-full);
+color: var(--off-white-full);
+border: none;
+margin: 2rem;
+padding: 1rem;
+font-size: 1.5rem;
+cursor: pointer;
+transition: background-color 0.3s;
+border-radius: 0.3rem;
+align-self: center;
+width: 50%;
+}
+
+.contact-container button[type="submit"]:hover {
+background-color: var(--light-green-full);
+}
+
+/*Reset Form button*/
+.contact-container button[type="reset"] {
+display: inline;
+background-color: var(--red-full);
+color: var(--off-white-full);
+border: none;
+padding: 1rem;
+font-size: 1.5rem;
+cursor: pointer;
+transition: background-color 0.3s;
+border-radius: 0.3rem;
+align-self: center;
+width: 50%;
+}
+
+.contact-container button[type="reset"]:hover {
+background-color: var(--light-red-full);
+}
+
+
+
+
+/*------------------------------------------
+DEFAULT FOOTER STYLES
+------------------------------------------*/
+footer p {
+	color: var(--light-green-full);
+	text-align: center;
+	margin: 0.5rem 0;
+  }
+  footer p::first-letter {
+	color: var(--green-full);
+	font-weight: bold;
+  }
+
+/*--------------------------------------------------------
+FOOTER STYLES MEDIUM SCREEN (590px-790px)
+--------------------------------------------------------*/
+@media (min-width: 590px) and (max-width: 789px) {
+
+}
+
+/*--------------------------------------------------------
+FOOTER STYLES LARGE SCREEN (>790px)
+--------------------------------------------------------*/
+@media (min-width: 790px) {
+
+}

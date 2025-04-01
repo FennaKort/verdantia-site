@@ -8,31 +8,227 @@
     <title>Verdantia | Home</title>
     <meta name="authors" content="Fenna and Damon">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/assn2.css">
 </head>
 
 <body>
-    <header id="titleBanner">
-        <div id="siteName">
-            <img src="images/verdantia-logo-50x50-transparent.png" alt="">            <h2>Verdantia</h2>
+    <header id="title-banner">
+        <div id="site-name">
+            <img src="images/verdantia-logo-50x50-transparent.png" alt="">            
+            <h2>Verdantia</h2>
         </div>
-        <nav id="headerButtons">
-            <a href="index.html" class="bannerButton currentPage" id="homeB">Home</a>
-            <a href="pages/services.html" class="bannerButton" id="servicesB">Services</a>
-            <a href="pages/contact.html" class="bannerButton" id="contactB">Contact</a>
+        <nav id="header-buttons">
+            <a href="index.html" class="banner-button current-page">Home</a>
+            <a href="pages/services.html" class="banner-button">Services</a>
+            <a href="pages/contact.html" class="banner-button">Contact</a>
         </nav>
     </header>
 
-    <main id="homeBG">   
-        <!--Background Photo by Madison Inouye: https://www.pexels.com/photo/variegated-leafed-plant-1403400/-->     
-        <div id="tagContainer">
-            <div id="tagOutline">
-                <h1 id="tagline">It's a beautiful day<br>for new plants</h1>
+    <main>   
+    <!---------------------------------
+    LANDING SCREEN SECTION
+    ---------------------------------->
+        <!--Background Photo by Madison Inouye: https://www.pexels.com/photo/variegated-leafed-plant-1403400/-->    
+        <div id="hero-section" class="full-width-flex-container">
+            <div class="presentation-container">
+                <div class="presentation-container-outline full-width-flex-container">
+                    <h1 id="tagline">It's a beautiful day<br>for new plants</h1>
+                </div>
             </div>
         </div>
+
+    <!---------------------------------
+    OFFERS SECTION
+    ---------------------------------->
+        <section id="what-we-offer" class="full-width-flex-container">
+            <div id="what-we-offer-container"> <!--container necessary as wrapper for flex item-->
+              <figure class="image-section">
+                <img id="what-we-offer-img" src="images/what-we-do-img.jpg" alt="A group of people take part in a Plant Party hosted by Verdantia. They sit around a table, potting up their new plants and sipping mocktails.">
+                  <!--Photo by cottonbro studio: https://www.pexels.com/photo/people-planting-plants-9721367/-->
+                <figcaption id="what-we-offer-img-caption" class="overlay">Plant Party,<br>July 2024</figcaption>
+              </figure>
+            </div>
+            <div id="what-we-offer-content-section">
+              <h2>What We Offer</h2>
+              <nav>
+                <!--maybe contain it in an unordered list-->
+                <a href="#partyContainer" class="buttons">Plant Parties</a>
+                <a href="#marketContainer" class="buttons">Pop Up Markets</a>
+                <a href="#stylingContainer" class="buttons">Plant Styling</a>
+              </nav>
+            </div>
+          </section>
+      
+          <section id="plant-parties" class="full-width-flex-container">
+            <div class="image-section">
+              <img src="images/plant-parties-img.jpg" alt="A close up of a woman's hand scooping potting soil during a Plant Party.">
+                <!--Photo by cottonbro studio: https://www.pexels.com/photo/a-person-getting-a-soil-9721507/-->
+            </div>
+            <div class="content-section">
+              <h3>Plant Parties</h3>
+              <p>
+                Bring the joy of greenery to your gatherings! Whether it's a birthday, bridal shower, or just a fun hangout, our plant parties are perfect for groups of all sizes. Create your own plant arrangements while bonding with friends and learning plant care tips. Let's grow together!
+              </p>
+      
+            </div>
+          </section>
+            <hr>
+          <section id="popup-markets" class="full-width-flex-container">
+            <div class="image-section">
+              <img src="images/popup-markets-img.jpg" alt="A person holds a plant they purchased at one of our Popup Markets.">
+                <!--Photo by Dmitriy Ganin: https://www.pexels.com/photo/unrecognizable-woman-with-flowerpot-in-garden-7760789/-->
+            </div>
+            <div class="content-section">
+              <h3>Pop Up Markets</h3>
+              <p>
+                Catch us at local markets and events! We bring a curated selection of vibrant, healthy plants and unique
+                accessories to your community. It's the perfect opportunity to discover your next favorite green companion
+                locally.
+              </p>
+            </div>
+          </section>
+            <hr>
+          <section id="plant-styling" class="full-width-flex-container">
+            <div class="image-section">
+              <img src="images/plant-styling-img.jpg" alt="An example of our plant styling services showing greenery brightening up a cafe seating area.">
+                <!--Photo by Valeria Boltneva: https://www.pexels.com/photo/photography-of-table-and-chairs-near-plants-827518/-->
+            </div>
+            <div class="content-section">
+              <h3>Plant Styling</h3>
+              <p>
+                Transform your space with greenery! Our plant styling services are tailored to your home or business, creating
+                beautiful, functional, and low-maintenance plant displays. Not sure how to care for your plants? Check out <a
+                  href="https://www.howmanyplants.com" target="_blank">this helpful plant care guide</a> to get started. From
+                statement pieces to subtle touches, we'll help you bring your vision to life.
+              </p>
+            </div>
+          </section>
+      
+          <section id="price-list">
+            <div class="presentation-container">
+              <div class="presentation-container-outline">
+                <table class="price-table">
+                  <thead>
+                    <tr>
+                      <th colspan="2" id="price-table-heading">Price List</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td id="service-column">Plant Parties</td>
+                      <td id="price-column">
+                        4-10 people: $80 + plants
+                        <br>
+                        10+ people: Please contact
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Pop Up Markets</td>
+                      <td>$45/hour, minimum 2 hours</td>
+                    </tr>
+                    <tr>
+                      <td>Plant Styling</td>
+                      <td>Please contact for quote</td>
+                    </tr>
+                    <tr>
+                      <td>Plants</td>
+                      <td>
+                        4"-10" available. <br>
+                        Recommend 1 large plant or 2-3 small plants per participant
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+    <!---------------------------------
+    CONTACT FORM
+    ---------------------------------->
+          <div class="contact-container">
+            <h2>Contact Us</h2>
+            <form action="mailto:dirwi911@mtroyal.ca" method="POST" enctype="text/plain">
+              <!-- Name -->
+              <fieldset>
+                <legend>Your Name</legend>
+                <!--First Name-->
+                  <label for="name" class="form-field">Name *Required</label>
+                  <input type="text" id="name" name="name" placeholder="Enter your name!" required>
+              </fieldset>
+      
+              <!--Contact Information-->
+              <fieldset>
+                <legend>How can we get in touch?</legend>
+                <!-- Phone -->
+                  <label for="phone" class="form-field">Your Phone *</label>
+                  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}" placeholder="123-456-7890" required>
+      
+                <!-- Email -->
+                  <label for="email" class="form-field">Your Email *</label>
+                  <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="example@example.com" required>    
+      
+                <!-- Preferred Contact Method (Radio Buttons) -->
+                  <label class="form-field">Preferred Contact Method:</label>
+                  <label>
+                    <input type="radio" name="contact-method" value="email" checked>
+                    Email
+                  </label>
+                  <label>
+                    <input type="radio" name="contact-method" value="phone">
+                    Phone
+                  </label>
+                  <label>
+                    <input type="radio" name="contact-method" value="text">
+                    Text Message
+                  </label>  
+              </fieldset>
+        
+              <!-- How Can We Help You? -->
+              <fieldset>
+                <legend>How Can We Help You?</legend>
+                <!-- Inquiry Subject: Service Type (Checkbox Items) -->
+                <label>I am interested in... *</label>
+                <div id="service">
+                  <label>
+                    <input type="checkbox" name="service" value="plant-parties">Plant Parties
+                  </label>
+                  <label>
+                    <input type="checkbox" name="service" value="pop-up-markets">Pop Up Markets
+                  </label>
+                  <label>
+                    <input type="checkbox" name="service" value="plant-styling">Plant Styling
+                  </label>  
+                  <label>
+                    <input type="checkbox" name="service" value="general-inquiry">General Inquiry
+                  </label>            
+                </div>
+      
+                <!-- Party Size (optional for Plant Parties) -->
+                <label for="party-size">Party Size (if applicable)</label>
+                  <input type="number" id="party-size" name="party-size" placeholder="Enter number of participants">   
+      
+                <!-- Additional Message -->
+                <label for="message">Additional Information *</label>
+                <textarea id="message" name="message" rows="5" placeholder="Let us know more about your needs" required></textarea>
+              </fieldset>
+        
+              <!-- Newsletter Subscription (Checkbox) -->
+              <label>
+                <input type="checkbox" name="newsletter" value="yes">
+                Subscribe to our newsletter
+              </label>
+        
+              <!-- Submit Button -->
+              <button type="submit">Send Message</button>
+      
+              <!-- Reset Button -->
+              <button type="reset">Reset the Form</button>        
+            </form>
+          </div>
     </main>
 
     <footer>
+        <!--footer content could be links to sections and back to top, could also be a brief description of the project-->
 
     </footer>
 </body>

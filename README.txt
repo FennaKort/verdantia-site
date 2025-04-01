@@ -2,11 +2,26 @@
 Verdantia is a demo website for a hypothetical company selling plant-related services. The Verdantia site is designed to appeal to creative urban millenials who value incorporating meaningful experiences into their daily lives. Verdantia offers these experiences through their curated events that let their customers bring the beauty of plants into their every day spaces. The website communicates with these target consumers through lush images of calladiums, a refined yet fun green and pink colour pallette, and site organization that allows visitors to quickly and easily learn about what Verdantia offers and how to inquire about Verdantia's services. 
 
 # General Task Distribution - Part 2
-
+mobile responsiveness - Fenna focus
+accessibility - Damon focus
 
 # Task Log - Part 2
-31 Mar. Fenna updating page organization and stylesheet links.
+31 Mar. Fenna updating page organization and stylesheet links. Fenna updating class/id naming convention
+To-do:
+[x]change css folder to styles and update on all pages
+[x]create pages folder and update links on all pages
+[x]add normalize-css.css to all pages, above link to main.css
+[x]update class/id naming conventions to lowercase with dashes
+[x]remove duplicate styles/consolidate styles where possible
+[x]replace what we offer and contact us h1s with h2s and ensure good document outline
 
+[]put fullsize styles into correct media queries
+
+[x]may be able to consolidate styles for price table container and tagline container
+[]may be able to consolidate styles for what we offer and contact form hover styles
+[x]may be able to remove styles for entire call to action section at around line 370
+[]add scrollbar-gutter and style scrollbar
+[]adjust .buttons class name
 
 
 --------------------------------------------------------------------------
