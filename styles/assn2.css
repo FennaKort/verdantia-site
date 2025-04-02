@@ -134,20 +134,6 @@ header {
   top: 0px;
   z-index: 999;
 }
-/*adjustments for sticky header scrolling on different mobile device sizes*/
-/*
-@media (orientation: portrait) and ((min-width: 374px) and (max-height: 700px)) {
-	header {
-		top: 0px;
-	}
-}
-@media (orientation: portrait) and ((max-width:589px) and (min-height: 820px)) {
-	header {
-		top: -25px;
-	}
-} 
-*/
-
 
 #site-name-mobile, #header-buttons {
   background-color: var(--green-full);
@@ -230,7 +216,7 @@ HEADER STYLES LARGE SCREEN (>790px)
 -----------------------------------------------------*/
 
 /*---------------------------------------------
-Banner specific 
+Hero section specific 
 --------------------------------------*/
 #hero-section {
   background: url('../images/calladiums-1-bg.jpg') no-repeat center center;
@@ -441,7 +427,7 @@ PRICES TABLE STYLES LARGE SCREEN (>790px)
 /*---------------------------------------------
 CONTACT FORM specific 
 --------------------------------------*/
-#contact-us {
+#contact-us { /*div for nav button link to jump to*/
 	position: relative;
 	top: -2rem;
 }
@@ -578,7 +564,15 @@ width: 50%;
 background-color: var(--light-red-full);
 }
 
-
+/*--------------------------------------------------------
+CONTACT FORM STYLES MEDIUM SCREEN (590px-790px)
+--------------------------------------------------------*/
+@media (min-width: 590px) {
+	#contact-us { /*div for nav button link to jump to*/
+		position: relative;
+		top: -4rem;
+	}
+}
 
 
 /*------------------------------------------
@@ -594,12 +588,7 @@ footer p {
 	font-weight: bold;
   }
 
-/*--------------------------------------------------------
-FOOTER STYLES MEDIUM SCREEN (590px-790px)
---------------------------------------------------------*/
-@media (min-width: 590px) and (max-width: 789px) {
 
-}
 
 /*--------------------------------------------------------
 FOOTER STYLES LARGE SCREEN (>790px)

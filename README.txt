@@ -30,6 +30,7 @@ To-do:
 [x]add scrollbar-gutter and style scrollbar
 [x]adjust .buttons class name to be more descriptive
 
+2 Apr 25. Fenna finishing mobile display; making adjustments to where links jump to on the page; adjustments to offer details section including adding another offer
 
 --------------------------------------------------------------------------
 
