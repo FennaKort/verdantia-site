@@ -265,35 +265,14 @@ Banner STYLES LARGE SCREEN (>790px)
 background-color: var(--light-pink-full);
 }
 
-#what-we-offer figure {
-padding-left: 1rem;
-padding-right: 2rem;
-margin-left: auto;
-position: relative;
-display: flex;
-flex-direction: column;
-}
-
-#what-we-offer-img {
-max-width: 30vw;
-}
-
-#what-we-offer-img-caption {
-position: absolute;
-bottom: -2rem;
-border: #416A53 0.1rem solid;
-box-shadow: 0.5rem 0.5rem var(--light-green-full);
-background-color: #FFFCFC;
-color: #11451F;
-font-family: 'Inria Serif', 'Times New Roman', Times, serif;
-padding: 0.5rem 1.5rem;
-text-align: center;
+#what-we-offer-figure-container {
+	display: none;
 }
 
 #what-we-offer-content-section {
-padding-top: 1rem;
-display: flex;
-flex-direction: column;
+	padding-top: 1rem;
+	display: flex;
+	flex-direction: column;
 }
 
 #what-we-offer-content-section h1 {
@@ -302,13 +281,12 @@ text-align: center;
 
 #what-we-offer-content-section nav {
 /*properties as flex item of #what-we-offer-content-section*/
-flex-grow: 1;
-padding: 0 1rem;
-
+	flex-grow: 1;
+	padding: 0 1rem;
 /*properties as flex container of individual buttons*/
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
 
 #what-we-offer-content-section .offer-button {
@@ -329,24 +307,83 @@ background-color: var(--very-light-pink-full);
 box-shadow: 0.5rem 0.5rem var(--dark-pink-full);
 border: var(--dark-pink-full) 0.1rem solid;
 }
+/*-----------------------------------------------------
+WHAT WE OFFER STYLES MEDIUM SCREEN (590px-790px)
+-----------------------------------------------------*/
+@media (min-width: 590px) {
+	#what-we-offer-figure-container {
+		display: block;
+	}
+	#what-we-offer figure {
+		padding-left: 1rem;
+		padding-right: 2rem;
+		margin-left: auto;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		}
+	#what-we-offer-img {
+	max-width: 30vw;
+	}
+	#what-we-offer-img-caption {
+		position: absolute;
+		bottom: -2rem;
+		border: #416A53 0.1rem solid;
+		box-shadow: 0.5rem 0.5rem var(--light-green-full);
+		background-color: #FFFCFC;
+		color: #11451F;
+		font-family: 'Inria Serif', 'Times New Roman', Times, serif;
+		padding: 0.5rem 1.5rem;
+		text-align: center;
+	}
+}
+
 
 /*Offers Details section*/
 #offer-details {
 	background-color: var(--off-white-full);
 }
+
+#offer-details .full-width-flex-container {
+	flex-direction: column;
+}
 .content-section{
-width: 30%;
-margin-left: 2em;
+	padding: 0 2rem;
+}
+
+.content-section h3 {
+	padding: 0.5rem;
+	text-align: center;
 }
 
 hr {
-width:70%;
-height:0.1rem;
-background-color: var(--pink-full);
-border: none;
-margin-left:auto;
-margin-right:auto;
+	width: 70%;	
+	height:0.1rem;
+	background-color: var(--pink-full);
+	border: none;
+	margin-left:auto;
+	margin-right:auto;
 }
+
+/*-----------------------------------------------------
+OFFER DETAILS STYLES MEDIUM SCREEN (590px-790px)
+-----------------------------------------------------*/
+@media (min-width: 590px) {
+	#offer-details .full-width-flex-container {
+		flex-direction: row;
+	}
+
+	.content-section{
+		width: 30%;
+		margin-left: 2em;
+		padding: 0;
+	}
+	.content-section h3 {
+		padding: 0;
+		text-align: left;
+	}
+}
+
 
 /*----------------------------------
 prices table section
@@ -358,8 +395,6 @@ align-items: center;
 justify-content: center;
 background-color: var(--light-pink-full);
 }
-
-
 
 #price-table-heading {
 font-family: 'Inria Serif', serif;
@@ -376,10 +411,10 @@ padding: 0.5rem;
 width: 50%;
 }
 
-/*
+
 tr:nth-child(even) {
 background-color: var(--very-light-pink-full);
-} */
+} 
 
 /*-----------------------------------------------------
 PRICES TABLE STYLES MEDIUM SCREEN (590px-790px)
@@ -403,11 +438,13 @@ PRICES TABLE STYLES LARGE SCREEN (>790px)
 	}
 }
 
-
-
 /*---------------------------------------------
 CONTACT FORM specific 
 --------------------------------------*/
+#contact-us {
+	position: relative;
+	top: -2rem;
+}
 .contact-container {
 accent-color: var(--pink-full);
 }
