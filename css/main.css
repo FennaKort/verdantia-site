@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap');
+
+:root {
+  /* 100% Opacity Colors */
+  --white-full: #FFFCFC;
+  --black-full: #000000;
+  --pink-full: #CC6D8A;
+  --dark-pink-full: #A04D69;
+  --green-full: #11451F;
+  --light-green-full: #416A53;
+  --grey-transparent: #D9D9D900;
+  /* 0% opacity */
+  --light-pink-full: #F6DDDD;
+  --very-light-pink-full: #FAEAEA;
+
+  /* 80% Opacity Colors */
+  --white-80: rgba(255, 252, 252, 0.8);
+}
+
+/*----------------------------------------all pages---------------------------------------------*/
+body {
+  margin: 0px;
+}
+
+/*---------------------------------------------Header, on every page --------------------------------------*/
+#titleBanner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--green-full);
+  padding: 0px 0px;
+  color: white;
+  height: 3em;
+}
+
+#titleBanner h2 {
+  padding: 0px 20px;
+}
+
+#headerButtons {
+  display: flex;
+  height: 100%;
+}
+
+.bannerButton {
+  text-decoration: none;
+  color: white;
+  padding: 0 25px;
+  background-color: var(--green-full);
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.bannerButton:hover {
+  background-color: var(--light-green-full);
+  /* pale green on hover */
+}
+
+
+
+/*---------------------------------------------INDEX.HTML specific --------------------------------------*/
+#tagline {
+  background-color: var(--white-80);
+
+  width: 60%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--pink-full);
+  border-radius: 12px;/*rounded corners */
+  font-family: 'Inria Serif', serif;
+  font-size: 5rem;
+  color: var(--grey-transparent);/* Make the inside transparent */
+  -webkit-text-stroke: 2px var(--pink-full);/* Outline color and thickness */
+  text-align: center;
+
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 2px solid var(--pink-full);
+  border-radius: 10px;
+  /* Slightly smaller than parent radius */
+}
+
+#homeBG {
+  background: url('../images/calladiums-1-bg.jpeg') no-repeat center center;
+  background-size: cover;
+  height: calc(100vh - 3em);
+  /* Full screen( minus the header height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0px;
+
+}
+
+/*---------------------------------------------SERVICES.HTML specific --------------------------------------*/
+
+
+
+/*---------------------------------------------CONTACT.HTML specific --------------------------------------*/

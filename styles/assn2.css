@@ -96,7 +96,7 @@ REUSABLE COMPONENTS STYLES (<590px+all)
 /*-----------------------------------------------------
 reusable components STYLES MEDIUM SCREEN (590px-790px)
 -----------------------------------------------------*/
-@media (min-width: 590px) {
+@media (min-width: 590px) and (max-width: 790px) {
 	.responsive-width-container {
 		margin: 1.5rem;
 	}
@@ -106,6 +106,8 @@ reusable components STYLES MEDIUM SCREEN (590px-790px)
 	.presentation-container-outline {
 		padding: 0.75rem;
 	}
+
+
 }
 
 /*-----------------------------------------------------
@@ -296,7 +298,12 @@ border: var(--dark-pink-full) 0.1rem solid;
 /*-----------------------------------------------------
 WHAT WE OFFER STYLES MEDIUM SCREEN (590px-790px)
 -----------------------------------------------------*/
-@media (min-width: 590px) {
+@media (min-width: 590px) and (max-width: 790px){
+	#what-we-offer-content-section nav {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+	}
 	#what-we-offer-figure-container {
 		display: block;
 	}
@@ -322,6 +329,62 @@ WHAT WE OFFER STYLES MEDIUM SCREEN (590px-790px)
 		padding: 0.5rem 1.5rem;
 		text-align: center;
 	}
+
+	#offer-details {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+		padding: 1rem;
+		grid-auto-rows: 1fr; /* this ensures each row is the same height */
+	  }
+	
+	  #offer-details section.full-width-flex-container {
+		display: flex;
+		flex-direction: column !important;
+		align-items: center;
+		text-align: center;
+		padding: 1rem;
+		border: none;
+		border-top: 0.1rem solid var(--pink-full);
+		border-bottom: 0.1rem solid var(--pink-full);
+		border-left: 0.1rem solid var(--pink-full);
+		border-right: 0.1rem solid var(--pink-full);
+		box-shadow: 0.25rem 0.25rem var(--very-light-pink-full);
+		min-height: 100%; /* this makes each card take the entire height */
+		margin: auto;
+	  }
+	
+	  #offer-details .image-section {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 1rem;
+	  }
+	
+	  #offer-details .image-section img {
+		width: 80%;
+		height: auto;
+		border-radius: 1rem;
+	  }
+	
+	  #offer-details .content-section {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	  }
+	
+	  #offer-details .content-section h3 {
+		text-align: center;
+		margin-bottom: 0.5rem;
+	  }
+	
+	  hr {
+		display: none;
+	  }
 }
 
 
@@ -578,18 +641,22 @@ CONTACT FORM STYLES MEDIUM SCREEN (590px-790px)
 /*------------------------------------------
 DEFAULT FOOTER STYLES
 ------------------------------------------*/
-footer p {
-	color: var(--light-green-full);
+footer {
+	background-color: var(--green-full);
+	color: var(--off-white-full);
+	padding: 1rem;
 	text-align: center;
-	margin: 0.5rem 0;
+	font-size: 0.9rem;
   }
-  footer p::first-letter {
-	color: var(--green-full);
-	font-weight: bold;
+  
+  footer a {
+	color: var(--off-white-full);
+	text-decoration: underline;
   }
-
-
-
+  
+  footer a:hover {
+	color: var(--light-green-full);
+  }
 /*--------------------------------------------------------
 FOOTER STYLES LARGE SCREEN (>790px)
 --------------------------------------------------------*/
