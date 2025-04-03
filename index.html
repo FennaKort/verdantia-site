@@ -47,7 +47,7 @@
         <section id="what-we-offer" class="full-width-flex-container">
             <div id="what-we-offer-figure-container"> <!--container necessary as wrapper for flex item-->
               <figure class="image-section">
-                <img id="what-we-offer-img" src="images/what-we-do-img.jpg" alt="A group of people take part in a Plant Party hosted by Verdantia. They sit around a table, potting up their new plants and sipping mocktails.">
+                <img id="what-we-offer-img" src="images/what-we-do-img.jpg" alt="A group of people take part in a Plant Party hosted by Verdantia.">
                   <!--Photo by cottonbro studio: https://www.pexels.com/photo/people-planting-plants-9721367/-->
                 <figcaption id="what-we-offer-img-caption" class="overlay">Plant Party,<br>July 2024</figcaption>
               </figure>
@@ -196,7 +196,8 @@
                   <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="example@example.com" required>    
       
                 <!-- Preferred Contact Method (Radio Buttons) -->
-                  <label class="form-field">Preferred Contact Method:</label>
+                <fieldset>
+                  <legend>Preferred Contact Method *</legend>
                   <label>
                     <input type="radio" name="contact-method" value="email" checked>
                     Email
@@ -208,7 +209,8 @@
                   <label>
                     <input type="radio" name="contact-method" value="text">
                     Text Message
-                  </label>  
+                  </label>
+                </fieldset>
               </fieldset>
         
               <!-- How Can We Help You? -->
