@@ -32,6 +32,99 @@ To-do:
 
 2 Apr 25. Fenna finishing mobile display; making adjustments to where links jump to on the page; adjustments to offer details section including adding another offer
 
+
+2 Apr 25 - Damon
+
+Implemented accessibility fixes based on WCAG 2.1 guidelines
+Ran WAVE automated accessibility testing and resolved flagged issues
+Added 2x2 grid layout using CSS Grid on medium screens (590px-789px)
+Forced vertical stacking of image/text in offer cards on medium screens
+Standardized card sizing with grid auto-rows and flex layout
+Centered content text properly in cards by overriding inherited margins
+Replaced orphaned <label> elements with <fieldset> and <legend> for grouped inputs
+Added a visually hidden <h2> to the Price List section to satisfy section heading validation
+Validated all pages through W3C validator and corrected structure where needed
+
+------------------------------------------------------------------------------------------------------------------------------------------
+Accessibility Review:
+
+We conducted both manual and automated accessibility reviews.
+
+Manual Accessibility Review:
+
+We performed a thorough manual accessibility audit of the Verdantia website using WCAG 2.1 AA guidelines, focusing on the four main principles: Perceivable, Operable, Understandable, and Robust.
+
+---
+
+Perceivable:
+- All images on the site have descriptive and meaningful `alt` attributes.
+- Headings are used in a logical and hierarchical structure. Pages start with an `<h1>` or `<h2>` and follow with `<h3>` as needed.
+- Decorative images (e.g., logo) have empty or omitted alt text where appropriate.
+- Color contrast meets WCAG AA for large text:
+  - `#A04D69` (dark pink) on `#F6DDDD` (light pink) has a ratio of 4.33:1, which passes for large text (used in headings).
+  - `#11451F` (green) on light backgrounds has excellent contrast (>9:1).
+  - Lighter pinks such as `#CC6D8A` on `#F6DDDD` are only used for large or decorative text to avoid failing contrast.
+- Text remains readable when zoomed in up to 200%.
+- Font sizing is consistent and legible (base size 20px, responsive typography for headers).
+
+---
+
+Operable:
+- All interactive elements are accessible via keyboard (tested using Tab/Shift+Tab navigation).
+- Visual focus indicators are clearly visible when tabbing through links and form fields.
+- Form fields and buttons are spaced sufficiently for easy interaction.
+- No keyboard traps are present, and users can navigate smoothly through the entire site.
+- Site uses sticky navigation, improving usability on small screens.
+- Skip links are not implemented, but the site is still easily navigable.
+
+---
+
+Understandable:
+- Every form field is associated with a `<label>` element using `for="id"`, improving clarity for screen reader users.
+- Required fields are clearly marked with an asterisk and use `required` in the markup.
+- Form inputs use appropriate types (`email`, `tel`, `number`) to trigger device-optimized keyboards.
+- Placeholder text provides helpful context without replacing labels.
+- Navigation is consistent across all pages, and link behavior is predictable.
+- Pages use `<html lang="en">` to define language properly.
+
+---
+
+Robust:
+- All HTML passes validation via the W3C Validator.
+- The site uses semantic HTML5 structure: `<header>`, `<main>`, `<section>`, `<nav>`, and `<footer>` are used meaningfully.
+- ARIA attributes were not required, as semantic tags and labels are sufficient for current structure.
+- The design remains functional and consistent across modern browsers and devices.
+
+---
+
+Conclusion:
+The Verdantia website adheres to most WCAG 2.1 AA guidelines and was built with accessibility in mind from the ground up. Color contrast, form accessibility, keyboard navigation, and semantic structure were all evaluated and adjusted where necessary. No known accessibility blockers remain.
+
+
+Automated Accessibility Review (WAVE):
+
+We used the WAVE Web Accessibility Evaluation Tool to test all three pages of our website. WAVE flagged the following issues:
+
+---
+
+1. ⚠️ Long Alternative Text
+- One image was flagged for having overly long alternative text.
+- Issue: The `alt` attribute for the image in the "Plant Party" section was detailed enough to be a caption.
+- Resolution: We shortened the `alt` text to briefly describe the image content and moved extra details into a `<figcaption>` or body text when appropriate. Long descriptions are better placed in visible content, not alt text.
+
+---
+
+2. ⚠️ Orphaned Form Labels (2)
+- Labels for “Preferred contact method” and “I am interested in…” were flagged as orphaned.
+- Issue: WAVE detected that the `<label>` elements are not correctly associated with corresponding inputs (radio buttons and checkboxes).
+- Resolution: We reviewed and adjusted the form markup to ensure that each label wraps its corresponding input OR uses `for` and `id` pairs correctly. For groups (like checkboxes), we ensured the label is either:
+  - Associated individually (`<label for="input-id">`)
+  - Or used a `fieldset` with a `legend` for clarity
+  
+
+
+
+
 --------------------------------------------------------------------------
 
 # General Task Distribution - Part 1 
