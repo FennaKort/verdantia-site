@@ -2,8 +2,8 @@
 Verdantia is a demo website for a hypothetical company selling plant-related services. The Verdantia site is designed to appeal to creative urban millenials who value incorporating meaningful experiences into their daily lives. Verdantia offers these experiences through their curated events that let their customers bring the beauty of plants into their every day spaces. The website communicates with these target consumers through lush images of calladiums, a refined yet fun green and pink colour pallette, and site organization that allows visitors to quickly and easily learn about what Verdantia offers and how to inquire about Verdantia's services. 
 
 # General Task Distribution - Part 2
-mobile responsiveness - Fenna focus
-accessibility - Damon focus
+mobile responsiveness + organization/consistency - Fenna focus
+accessibility + grid implementation + HTML validation - Damon focus
 
 # Task Log - Part 2
 31 Mar. Fenna updating page organization and stylesheet links. Fenna updating class/id naming convention
@@ -45,8 +45,14 @@ Replaced orphaned <label> elements with <fieldset> and <legend> for grouped inpu
 Added a visually hidden <h2> to the Price List section to satisfy section heading validation
 Validated all pages through W3C validator and corrected structure where needed
 
+3 April 25. Fenna making adjustments to ensure compliance with assignment reqs. Removed grid display on what-we-offer nav to ensure compliance with max-width:790px requirement. Adjusted cards implementation for medium screens for consistent appearance with other size displays. Removed centred paragraphs on cards to improve readiability.
+[x] offers grid needs to be implemented on large screens too
+[x] revert #what-we-offer-figure-container {
+	display: none;
+} for medium and large
+
 ------------------------------------------------------------------------------------------------------------------------------------------
-Accessibility Review:
+# Accessibility Review:
 
 We conducted both manual and automated accessibility reviews.
 
@@ -120,9 +126,6 @@ We used the WAVE Web Accessibility Evaluation Tool to test all three pages of ou
 - Resolution: We reviewed and adjusted the form markup to ensure that each label wraps its corresponding input OR uses `for` and `id` pairs correctly. For groups (like checkboxes), we ensured the label is either:
   - Associated individually (`<label for="input-id">`)
   - Or used a `fieldset` with a `legend` for clarity
-  
-
-
 
 
 --------------------------------------------------------------------------

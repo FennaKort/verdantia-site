@@ -96,7 +96,7 @@ REUSABLE COMPONENTS STYLES (<590px+all)
 /*-----------------------------------------------------
 reusable components STYLES MEDIUM SCREEN (590px-790px)
 -----------------------------------------------------*/
-@media (min-width: 590px) and (max-width: 790px) {
+@media (min-width: 590px) and (max-width: 789px) {
 	.responsive-width-container {
 		margin: 1.5rem;
 	}
@@ -171,14 +171,8 @@ header {
   /* pale green on hover */
 }
 
-/*
-.current-page {
-  background-color: var(--light-green-full);
-}
-*/
-
 /*-----------------------------------------------------
-HEADER STYLES MEDIUM SCREEN (590px-790px)
+HEADER STYLES MEDIUM SCREEN AND ABOVE(>590px)
 -----------------------------------------------------*/
 @media (min-width: 590px) {
 	header {
@@ -214,9 +208,6 @@ HEADER STYLES LARGE SCREEN (>790px)
 	}
 }
 
-/*-----------------------------------------------------
------------------------------------------------------*/
-
 /*---------------------------------------------
 Hero section specific 
 --------------------------------------*/
@@ -240,7 +231,7 @@ Banner STYLES LARGE SCREEN (>790px)
 }
 
 
-/*---------------------------------------------SERVICES.HTML specific --------------------------------------*/
+/*---------------------------------------------SERVICES specific --------------------------------------*/
 /*General styling for sections with image plus text*/
 .image-section img{
 	border-radius: 50%;
@@ -254,23 +245,25 @@ background-color: var(--light-pink-full);
 }
 
 #what-we-offer-figure-container {
-	display: none;
+	display: none; /*plant party image with caption hidden for small screens*/
 }
 
 #what-we-offer-content-section {
 	padding-top: 1rem;
 	display: flex;
 	flex-direction: column;
+	flex-grow: 1;
 }
 
-#what-we-offer-content-section h1 {
-text-align: center;
+#what-we-offer-content-section h2 {
+	text-align: center;
+	font-size: 2.5rem;
 }
 
 #what-we-offer-content-section nav {
 /*properties as flex item of #what-we-offer-content-section*/
 	flex-grow: 1;
-	padding: 0 1rem;
+	padding: 0;
 /*properties as flex container of individual buttons*/
 	display: flex;
 	flex-direction: column;
@@ -278,37 +271,32 @@ text-align: center;
 }
 
 #what-we-offer-content-section .offer-button {
-text-decoration: none;
-background-color: #FFFCFC;
-box-shadow: 0.5rem 0.5rem var(--off-white-full);
-font-family: 'Inria Serif', 'Times New Roman', Times, serif;
-text-align:center;
-color: var(--dark-pink-full);
-font-size: 1.5rem;
-border: var(--pink-full) 0.1rem solid;
-margin: 1rem;
-padding: 1rem;
+	text-decoration: none;
+	background-color: #FFFCFC;
+	box-shadow: 0.5rem 0.5rem var(--off-white-full);
+	font-family: 'Inria Serif', 'Times New Roman', Times, serif;
+	text-align:center;
+	color: var(--dark-pink-full);
+	font-size: 1.5rem;
+	border: var(--pink-full) 0.1rem solid;
+	margin: 1rem;
+	padding: 1rem;
 }
 
 #what-we-offer-content-section .offer-button:hover {
-background-color: var(--very-light-pink-full);
-box-shadow: 0.5rem 0.5rem var(--dark-pink-full);
-border: var(--dark-pink-full) 0.1rem solid;
+	background-color: var(--very-light-pink-full);
+	box-shadow: 0.5rem 0.5rem var(--dark-pink-full);
+	border: var(--dark-pink-full) 0.1rem solid;
 }
 /*-----------------------------------------------------
-WHAT WE OFFER STYLES MEDIUM SCREEN (590px-790px)
+WHAT WE OFFER STYLES MEDIUM SCREENS AND LARGER (>590px)
 -----------------------------------------------------*/
-@media (min-width: 590px) and (max-width: 790px){
-	#what-we-offer-content-section nav {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 1rem;
-	}
+@media (min-width: 590px){
 	#what-we-offer-figure-container {
 		display: block;
 	}
 	#what-we-offer figure {
-		padding-left: 1rem;
+
 		padding-right: 2rem;
 		margin-left: auto;
 		position: relative;
@@ -316,75 +304,19 @@ WHAT WE OFFER STYLES MEDIUM SCREEN (590px-790px)
 		flex-direction: column;
 		}
 	#what-we-offer-img {
-	max-width: 30vw;
+		max-width: 30vw;
 	}
 	#what-we-offer-img-caption {
 		position: absolute;
 		bottom: -2rem;
-		border: #416A53 0.1rem solid;
+		border: var(--light-green-full) 0.1rem solid;
 		box-shadow: 0.5rem 0.5rem var(--light-green-full);
-		background-color: #FFFCFC;
-		color: #11451F;
+		background-color: var(--off-white-full);
+		color: var(--green-full);
 		font-family: 'Inria Serif', 'Times New Roman', Times, serif;
 		padding: 0.5rem 1.5rem;
 		text-align: center;
 	}
-
-	#offer-details {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 2rem;
-		padding: 1rem;
-		grid-auto-rows: 1fr; /* this ensures each row is the same height */
-	  }
-	
-	  #offer-details section.full-width-flex-container {
-		display: flex;
-		flex-direction: column !important;
-		align-items: center;
-		text-align: center;
-		padding: 1rem;
-		border: none;
-		border-top: 0.1rem solid var(--pink-full);
-		border-bottom: 0.1rem solid var(--pink-full);
-		border-left: 0.1rem solid var(--pink-full);
-		border-right: 0.1rem solid var(--pink-full);
-		box-shadow: 0.25rem 0.25rem var(--very-light-pink-full);
-		min-height: 100%; /* this makes each card take the entire height */
-		margin: auto;
-	  }
-	
-	  #offer-details .image-section {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		margin-bottom: 1rem;
-	  }
-	
-	  #offer-details .image-section img {
-		width: 80%;
-		height: auto;
-		border-radius: 1rem;
-	  }
-	
-	  #offer-details .content-section {
-		width: 100%;
-		padding: 0;
-		margin: 0;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-	  }
-	
-	  #offer-details .content-section h3 {
-		text-align: center;
-		margin-bottom: 0.5rem;
-	  }
-	
-	  hr {
-		display: none;
-	  }
 }
 
 
@@ -417,7 +349,49 @@ hr {
 /*-----------------------------------------------------
 OFFER DETAILS STYLES MEDIUM SCREEN (590px-790px)
 -----------------------------------------------------*/
-@media (min-width: 590px) {
+@media (min-width: 590px) and (max-width: 789px) {
+	/*grid display cards:*/
+	#offer-details {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 3rem;
+		padding: 3rem;
+		grid-auto-rows: 1fr; /* this ensures each row is the same height */
+	  }
+	 
+	  #offer-details .full-width-flex-container {
+		justify-content: start;
+		padding: 2rem;
+		border: 0.1rem solid var(--pink-full);
+		box-shadow: 1rem 1rem var(--very-light-pink-full);
+		min-height: 100%; /* this makes each card take the entire height */
+		margin: auto;
+	  }
+
+	/*
+	  #offer-details .image-section img {
+		width: 80%;
+		height: auto;
+		border-radius: 1rem;
+	  }
+		Fenna removed in favour of keeping images circular for consistent appearance across breakpoints
+	*/
+	
+	  #offer-details .content-section {
+		width: 100%;
+		padding: 0;
+		line-height: 1.35rem; /*Fenna increased line height for card display because I found it hard to read in this format otherwise*/
+	  }
+	
+	  hr {
+		display: none;
+	  }
+}
+
+/*-----------------------------------------------------
+OFFER DETAILS STYLES LARGE SCREEN (>790px)
+-----------------------------------------------------*/
+@media (min-width: 790px) {
 	#offer-details .full-width-flex-container {
 		flex-direction: row;
 	}
@@ -433,36 +407,35 @@ OFFER DETAILS STYLES MEDIUM SCREEN (590px-790px)
 	}
 }
 
-
 /*----------------------------------
 prices table section
 ----------------------------------*/
 #price-list {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-background-color: var(--light-pink-full);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--light-pink-full);
 }
 
 #price-table-heading {
-font-family: 'Inria Serif', serif;
-font-weight: 700;
-font-size: 4.5rem;
-font-size: 12vmin;
-color: var(--transparent);/* Make the inside transparent */
--webkit-text-stroke: 0.1rem var(--dark-pink-full);/* Outline color and thickness */
-text-align: center;
+	font-family: 'Inria Serif', serif;
+	font-weight: 700;
+	font-size: 4.5rem;
+	font-size: 12vmin;
+	color: var(--transparent);/* Make the inside transparent */
+	-webkit-text-stroke: 0.1rem var(--dark-pink-full);/* Outline color and thickness */
+	text-align: center;
 }
 
 .price-table td{
-padding: 0.5rem;
-width: 50%;
+	padding: 0.5rem;
+	width: 50%;
 }
 
 
 tr:nth-child(even) {
-background-color: var(--very-light-pink-full);
+	background-color: var(--very-light-pink-full);
 } 
 
 .visually-hidden {
@@ -507,12 +480,12 @@ CONTACT FORM specific
 	top: -2rem;
 }
 .contact-container {
-accent-color: var(--pink-full);
+	accent-color: var(--pink-full);
 }
 
 .contact-container input[type="checkbox"],
 .contact-container input[type="radio"] {
-margin: 0 0.5rem;
+	margin: 0 0.5rem;
 }
 
 .contact-container input[type="text"]:focus,
@@ -523,15 +496,15 @@ margin: 0 0.5rem;
 .contact-container input[type="checkbox"]:focus,
 .contact-container textarea:focus, 
 .contact-container select:focus {
-outline: none;
-background-color: var(--very-light-pink-full);
-box-shadow: 0.2rem 0.2rem var(--dark-pink-full);
+	outline: none;
+	background-color: var(--very-light-pink-full);
+	box-shadow: 0.2rem 0.2rem var(--dark-pink-full);
 }
 
 .contact-container input[type="checkbox"]:focus,
 .contact-container input[type="radio"]:focus {
-box-shadow: 0.2rem 0.2rem var(--dark-pink-full);
-accent-color: var(--pink-full);
+	box-shadow: 0.2rem 0.2rem var(--dark-pink-full);
+	accent-color: var(--pink-full);
 } 
 
 .contact-container input[type="text"]:hover,
@@ -542,27 +515,27 @@ accent-color: var(--pink-full);
 .contact-container input[type="checkbox"]:hover,
 .contact-container textarea:hover, 
 .contact-container select:hover {
-box-shadow: 0.2rem 0.2rem var(--dark-pink-full);
-accent-color: var(--pink-full);
+	box-shadow: 0.2rem 0.2rem var(--dark-pink-full);
+	accent-color: var(--pink-full);
 }
 
 .contact-container h1 {
-text-align: center;
+	text-align: center;
 }
 
 .contact-container form {
-display: flex;
-flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .contact-container label {
-font-weight: bold;
-margin-top: 0.5rem;
-color: var(--dark-pink-full);
+	font-weight: bold;
+	margin-top: 0.5rem;
+	color: var(--dark-pink-full);
 }
 
 label.form-field {
-padding: 0.2rem 0;
+	padding: 0.2rem 0;
 }
 
 .contact-container input[type="text"],
@@ -571,72 +544,72 @@ padding: 0.2rem 0;
 .contact-container input[type="tel"],
 .contact-container textarea,
 .contact-container select {
-width: 100%;
-padding: 0.5rem;
-margin-bottom: 1rem;
-border: 0.1rem solid var(--dark-pink-full);
-background-color: var(--off-white-full);
-font-size: 1rem;
+	width: 100%;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	border: 0.1rem solid var(--dark-pink-full);
+	background-color: var(--off-white-full);
+	font-size: 1rem;
 }
 
 .contact-container #service {
-margin-bottom: 1rem; 
+	margin-bottom: 1rem; 
 }
 
 .contact-container textarea {
-resize: vertical;
+	resize: vertical;
 }
 
 .contact-container fieldset {
-border: 0.1rem solid var(--pink-full);
-padding: 1rem;
-margin-bottom: 1rem;
+	border: 0.1rem solid var(--pink-full);
+	padding: 1rem;
+	margin-bottom: 1rem;
 }
 
 .contact-container fieldset legend {
-font-family: 'Inria Serif', serif;
-font-size: 1.5rem;
-color: var(--pink-full);
-padding: 0 0.5rem;
+	font-family: 'Inria Serif', serif;
+	font-size: 1.5rem;
+	color: var(--pink-full);
+	padding: 0 0.5rem;
 }
 
 /*Send Message button*/
 .contact-container button[type="submit"] {
-display: inline;
-background-color: var(--green-full);
-color: var(--off-white-full);
-border: none;
-margin: 2rem;
-padding: 1rem;
-font-size: 1.5rem;
-cursor: pointer;
-transition: background-color 0.3s;
-border-radius: 0.3rem;
-align-self: center;
-width: 50%;
+	display: inline;
+	background-color: var(--green-full);
+	color: var(--off-white-full);
+	border: none;
+	margin: 2rem;
+	padding: 1rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	border-radius: 0.3rem;
+	align-self: center;
+	width: 50%;
 }
 
 .contact-container button[type="submit"]:hover {
-background-color: var(--light-green-full);
+	background-color: var(--light-green-full);
 }
 
 /*Reset Form button*/
 .contact-container button[type="reset"] {
-display: inline;
-background-color: var(--red-full);
-color: var(--off-white-full);
-border: none;
-padding: 1rem;
-font-size: 1.5rem;
-cursor: pointer;
-transition: background-color 0.3s;
-border-radius: 0.3rem;
-align-self: center;
-width: 50%;
+	display: inline;
+	background-color: var(--red-full);
+	color: var(--off-white-full);
+	border: none;
+	padding: 1rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	border-radius: 0.3rem;
+	align-self: center;
+	width: 50%;
 }
 
 .contact-container button[type="reset"]:hover {
-background-color: var(--light-red-full);
+	background-color: var(--light-red-full);
 }
 
 /*--------------------------------------------------------
@@ -669,9 +642,3 @@ footer {
   footer a:hover {
 	color: var(--light-green-full);
   }
-/*--------------------------------------------------------
-FOOTER STYLES LARGE SCREEN (>790px)
---------------------------------------------------------*/
-@media (min-width: 790px) {
-
-}
